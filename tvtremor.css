@@ -4,29 +4,26 @@ Autor: TVtremor
 */
 
 *{
-	text-decoration:none;
-	margin:0;
-	padding:0;
-	border:0;
-	font-family: 'Roboto', helvetica, arial, sans-serif;
+text-decoration:none;
+margin:0;
+padding:0;
+border:0;
+font-family: 'Roboto', helvetica, arial, sans-serif;
 }
 
 body{
-	width:100%;
-	height:100%;
-	background: rgb(240,240,240);
+width:100%;
+height:100%;
+background: rgb(240,240,240);
 }
 
-.RedNotify{
+.red-notifier{
 background-color:rgb(220,53,69);
 color:rgb(248,249,250);
 display:none;
 }
 
-html{
-position:relative;
-min-height:100%;
-}
+html{position:relative;min-height:100%;}
 
 @keyframes GrayscaleToColor{
 0% {filter:grayscale(100%);}
@@ -36,31 +33,25 @@ min-height:100%;
 100% {filter:grayscale(0%);}	
 }
 
-.HoverableLogo{
+.hoverable-logo{
 width:auto;
 height:50px;
 filter:grayscale(100%);
 margin-left:2em;
 }
 
-.HoverableLogo:hover{
+.hoverable-logo:hover{
 animation: GrayscaleToColor 0.1s;	
 animation-fill-mode: forwards;
 }
 
 @media (max-width:320px){
-.row .row-big{
-	text-align:left;
-}
+.row .row-big{text-align:left;}
 }
 	 
-.list-logo{
-	margin-top:2em;
-}
+.list-logo{margin-top:2em;}
 
-.FooterText{
-text-align:left;
-}
+.footer-text{text-align:left;}
 
 i.pic-caption{
 display:inline-block;
@@ -77,7 +68,7 @@ height:192px;
 top:0;
 }
 
-.ImgWithCom{
+.img-with-comment{
 display:inline-block;	
 min-height:192px;
 height:240px;
@@ -85,72 +76,43 @@ padding-right:240px;
 position:relative;
 }		
 
-.BoldLink{
-font-weight:bold;	
-}
+.bold-link{font-weight:bold;}
 
-a{
-cursor:pointer;
-}
+a{cursor:pointer;}
 
-p.small{
-font-size:12pt;	
-display:block;
-}
+p.small{font-size:12pt;	display:block;}
 
-.navbar-tvtremor{
-	background-color:rgb(250,250,250);border-radius:0px;
-}
+.navbar-tvtremor{background-color:rgb(250,250,250);border-radius:0px;}
 
-.menu-item{
-color:#010101;	
-}
+.menu-item{color:#010101;}
 
 .thumbnail{
-	min-height:32px;
-	min-width:96px;
-	vertical-align:top;
-	display:inline-block;
+min-height:32px;
+min-width:96px;
+vertical-align:top;
+display:inline-block;
 }
 
 .row{
-	min-height:96px;
-	min-width:32px;
-	text-align:center;
+min-height:96px;
+min-width:32px;
+text-align:center;
 }
 
-.thumbnail-description{
-	max-width:192px;
-}
+.thumbnail-description{max-width:192px;}
 
-.row-big{
-	text-align:left;
-}
+.row-big{text-align:left;}
 
-.testcard-jumbotron{
-	background: linear-gradient(135deg, #42cbf4 0%,#6bea91 100%);
-}
+.testcard-jumbotron{background: linear-gradient(135deg, #42cbf4 0%,#6bea91 100%);}
 
-.schedule-jumbotron{
-	background: linear-gradient(135deg, #ff3019 0%,#ffb2b2 100%);
-}
+.schedule-jumbotron{background: linear-gradient(135deg, #ff3019 0%,#ffb2b2 100%);}
 
-.ident-jumbotron{
-	background: linear-gradient(135deg, #ffa84c 0%,#ffd4b2 100%);
-}
+.ident-jumbotron{background: linear-gradient(135deg, #ffa84c 0%,#ffd4b2 100%);}
 
-.program-jumbotron{
-background: linear-gradient(135deg, #dbdbdb 0%,#85b2d3 100%);
-}
+.program-jumbotron{background: linear-gradient(135deg, #dbdbdb 0%,#85b2d3 100%);}
 
-.general-jumbotron{
-background: linear-gradient(135deg, #f8ffe8 0%,#b7df2d 100%);
-}
+.general-jumbotron{background: linear-gradient(135deg, #f8ffe8 0%,#b7df2d 100%);}
 
-.broadcast-jumbotron{
-background: linear-gradient(135deg, #e4b2ff 0%,#66b6fc 100%);	
-}
+.broadcast-jumbotron{background: linear-gradient(135deg, #e4b2ff 0%,#66b6fc 100%);	}
 
-.pp-jumbotron{
-background: linear-gradient(135deg, #5a547a 1%,#efa5d9 100%);
-}
+.pp-jumbotron{background: linear-gradient(135deg, #5a547a 1%,#efa5d9 100%);}

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html lang="hr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TVtremor</title>
+	<link href="/bin/bootstrap.min.css" rel="stylesheet">
+	<script src="/bin/jquery-3.3.1.min.js"></script>
+	<script src="/bin/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+	<link href="/tvtremor.css" rel="stylesheet">
+	<script src="/bin/main.js"></script>	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+
+</head>
+
+<body onload="SetJumbotron()">
+	<header>
+		<nav class="navbar navbar-light navbar-tvtremor">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/index.html">TVtremor</a>
+				</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a  class="menu-item" href="/index.html">Početna</a></li>
+				<li><a class="menu-item" href="/about.html">O projektu</a></li>
+				<li><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
+				<li class="active"><a class="menu-item" href="#">Radio</a></li>
+				<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+				<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Kontakt <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
+						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			</div>
+		</nav>
+	</header>
+	
+	<div class="container center">
+		<div class="jumbotron RedNotify" name="warning-jumbotron">
+			<p style="transform:translateY(-25%);">&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
+			<button class="btn btn-success btn-lg" onclick="JumbotronCookieSet()">Zatvori</button>
+		</div>
+	</div>
+	
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron" style="background-color:#fafafa;">
+				<h1>Radio stanice HRT-a</h1>
+				<div class="row" style="margin-top:2em;">
+				<a href="radio/hrthr1.html"><img class="HoverableLogo HRTHRlogo" style="height:64px;" src="img/logos/hrt-hr-1.png"></a>
+				<a href="radio/hrthr2.html"><img class="HoverableLogo HRTHRlogo" style="height:64px;" src="img/logos/hrt-hr-2.png"></a>
+				<a href="radio/hrthr3.html"><img class="HoverableLogo HRTHRlogo" style="height:64px;" src="img/logos/hrt-hr-3.png"></a>
+				</div>
+			</div>
+	</div>
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+</div>	
+	
+	
+</body>
+
+</html>

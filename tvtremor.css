@@ -1,6 +1,6 @@
-/* TVtremor CSS
-Autor: TVtremor
-2019.
+/* TVtremor-web CSS
+Autor/Author: TVtremor
+Godina/Year: 2019.
 */
 
 *{
@@ -9,6 +9,7 @@ margin:0;
 padding:0;
 border:0;
 font-family: 'Roboto', helvetica, arial, sans-serif;
+text-decoration:none;
 }
 
 body{
@@ -16,14 +17,6 @@ width:100%;
 height:100%;
 background: rgb(240,240,240);
 }
-
-.red-notifier{
-background-color:rgb(220,53,69);
-color:rgb(248,249,250);
-display:none;
-}
-
-html{position:relative;min-height:100%;}
 
 @keyframes GrayscaleToColor{
 0% {filter:grayscale(100%);}
@@ -48,34 +41,13 @@ animation-fill-mode: forwards;
 @media (max-width:320px){
 .row .row-big{text-align:left;}
 }
-	 
-.list-logo{margin-top:2em;}
-
-.footer-text{text-align:left;}
-
-i.pic-caption{
-display:inline-block;
-font-size:10pt;
-width:192px;
-position:absolute;
-top:192px;
-}
 
 img.extendable-pic{
 cursor:pointer;
 width:240px;
 height:192px;
-top:0;
 }
-
-.img-with-comment{
-display:inline-block;	
-min-height:192px;
-height:240px;
-padding-right:240px;
-position:relative;
-}		
-
+	
 .bold-link{font-weight:bold;}
 
 a{cursor:pointer;}
@@ -94,25 +66,25 @@ display:inline-block;
 }
 
 .row{
-min-height:96px;
+min-height:32px;
 min-width:32px;
 text-align:center;
 }
 
-.thumbnail-description{max-width:192px;}
-
-.row-big{text-align:left;}
-
+.thumbnail-description{max-width:192px; text-align:left;}
 .testcard-jumbotron{background: linear-gradient(135deg, #42cbf4 0%,#6bea91 100%);}
-
 .schedule-jumbotron{background: linear-gradient(135deg, #ff3019 0%,#ffb2b2 100%);}
-
 .ident-jumbotron{background: linear-gradient(135deg, #ffa84c 0%,#ffd4b2 100%);}
-
 .program-jumbotron{background: linear-gradient(135deg, #dbdbdb 0%,#85b2d3 100%);}
-
 .general-jumbotron{background: linear-gradient(135deg, #f8ffe8 0%,#b7df2d 100%);}
-
 .broadcast-jumbotron{background: linear-gradient(135deg, #e4b2ff 0%,#66b6fc 100%);	}
-
 .pp-jumbotron{background: linear-gradient(135deg, #5a547a 1%,#efa5d9 100%);}
+.notifier-jumbotron{background-color:rgb(220,53,69);color:rgb(248,249,250);display:none;}
+.clocks-jumbotron{background: linear-gradient(135deg, #7eeab4 0%,#d86e70 100%);}
+.about-jumbotron{background: linear-gradient(135deg, #c12626 0%,#50a4e5 100%);}
+
+.jumbotron{background-color:#fafafa;}
+.foot-jumbotron{background-color:rgb(88,89,90);}
+.foot-jumbotron > p{color:rgb(248,249,250);}
+.foot-jumbotron > p > a > i {color:rgb(208,209,210);}
+.foot-jumbotron > p > a > i:hover {color:rgb(178,179,180);}

@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body onload="setNotifierJumbotron()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -44,32 +44,38 @@
 	</header>
 
 		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
+		<div class="jumbotron notifier-jumbotron" name="warning-jumbotron">
 				<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg" onclick="JumbotronCookieSet()">Zatvori</button>
+			<button class="btn btn-success btn-lg" onclick="jumbotronCookieSet()">Zatvori</button>
 		</div>
 		</div>
 	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron program-jumbotron">
+				<h1 style="text-align:center;">Hrvatska radiotelevizija (HRT)</h1>
+	</div>
+</div>	
+	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Hrvatska radiotelevizija (HRT)</h1>
-					</p></p>
-				<h2>Kanali</h2>
-				<div class="row" style="margin-top:1.5em;">
-				<a href="regional/hrt/hrt1.html"><img class="HoverableLogo HRTlogo" src="/img/stations/hrt1.png"></a>
-				<a href="regional/hrt/hrt2.html"><img class="HoverableLogo HRTlogo" src="/img/stations/hrt2.png"></a>
-				<a href="regional/hrt/hrt3.html"><img class="HoverableLogo HRTlogo" src="/img/stations/hrt3.png"></a>
-				<a href="regional/hrt/hrt4.html"><img class="HoverableLogo HRTlogo" src="/img/stations/hrt4.png"></a>
-				<a href="regional/hrt/hrt5.html"><img class="HoverableLogo HRTlogo" src="/img/stations/hrt5.png"></a>
+			<div class="jumbotron">
+				<div class="row">
+				<a href="regional/hrt/hrt1.html"><img class="hoverable-logo" src="/img/stations/hrt1.png"></a>
+				<a href="regional/hrt/hrt2.html"><img class="hoverable-logo" src="/img/stations/hrt2.png"></a>
+				<a href="regional/hrt/hrt3.html"><img class="hoverable-logo" src="/img/stations/hrt3.png"></a>
+				<a href="regional/hrt/hrt4.html"><img class="hoverable-logo" src="/img/stations/hrt4.png"></a>
+				<a href="regional/hrt/hrt5.html"><img class="hoverable-logo" src="/img/stations/hrt5.png"></a>
 				</div>
 		</div>
 	</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Općenito</h1>
-					<p></p>
-				<div style="margin-top:2em;">
+		<div class="jumbotron general-jumbotron">
+				<h1 style="text-align:center;">Općenito</h1>
+		</div>
+	</div>
+	
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron">
 				<p>Hrvatska radiotelevizija (skraćeno HRT, u nekim izvorima HTV) je javna televizijska kuća, koja je priznata kao javna na temelju odluke Hrvatskoga sabora donesene 29. lipnja 1990. godine. Od osnutka je pod nazivom TV Zagreb bila član sastava <a href="jrt.html">JRT-a</a>, koji napušta 3. studenog 1990. Televizijski repertoar se sastoji od pet programa; najnoviji od njih, <a href="hrt5.html">HRT 5</a>, pušten je u emitiranje 1. siječnja 2018. godine, a namijenjen je hrvatskom iseljeništvu i emitira informativni sadržaj na njemačkom, talijanskom i engleskom jeziku. Nije dostupan u području RH, već samo kroz satelitsku vezu. Uz televizijske programe, HRT također emitira tri nacionalne radio-stanice: <a href="../radio/hr1.html">HR 1</a>, <a href="../radio/hr2.html">HR 2</a> i <a href="../radio/hr3.html">HR 3</a>. O lokalnim radio-stanicama koje su u sklopu HRT-a više možete pročitati na odjeljku <a href="../radio.html">radija.</a></p>
 				</div>
 		<h2>
@@ -77,57 +83,70 @@
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Test kartice</h1>
-				<p></p>
-					<p style="font-size:12pt;">Tijekom prestanka emitiranja programa ili tehničkih poteškoća, još u vrijeme JRT Televizije Zagreb koristi se <a href="https://upload.wikimedia.org/wikipedia/commons/3/32/Telefunken_FuBK_test_pattern.svg" target="_blank">Telefunken FuBK</a> test kartica. Test kartica u vrijeme Jugoslavije ima natpis JRT ZGRB1/2, u periodu između 29.6.1990. i 3.11.1990. ima natpis JRT HTV1/2, a sve do prelaska na digitalno emitiranje ima natpis HRT1/2/3.</p>
-						<div class="ImgWithCom">
+		<div class="jumbotron testcard-jumbotron">
+				<h1 style="text-align:center;">Test kartice</h1>
+	</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+					<p>Tijekom prestanka emitiranja programa ili tehničkih poteškoća, još u vrijeme JRT Televizije Zagreb koristi se <a href="https://upload.wikimedia.org/wikipedia/commons/3/32/Telefunken_FuBK_test_pattern.svg" target="_blank">Telefunken FuBK</a> test kartica. Test kartica u vrijeme Jugoslavije ima natpis JRT ZGRB1/2, u periodu između 29.6.1990. i 3.11.1990. ima natpis JRT HTV1/2, a sve do prelaska na digitalno emitiranje ima natpis HRT1/2/3.</p>
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/testcard/thumbs/hrt_generic-thumb.jpg">
-						<i class="pic-caption">Generički HRT-ov testcard. Koristio se na HRT Plusu i na njegovom nasljedniku, programu Slika Hrvatske.</i>
-							</div>
-						<div class="ImgWithCom">
+						<h6 class="thumbnail-description">Generički HRT-ov testcard. Koristio se na HRT Plusu i na njegovom nasljedniku, programu Slika Hrvatske.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/testcard/thumbs/ebu_hrt-thumb.jpg">
-						<i class="pic-caption">Običan SMPTE testcard sa natpisom HRT ZGRB. Ulovljeno sa satelitske najvjerojatnije sredinom devedesetih.</i>
+						<h6 class="thumbnail-description">Običan SMPTE testcard sa natpisom HRT ZGRB. Ulovljeno sa satelitske najvjerojatnije sredinom devedesetih.</h6>
 							</div>
 						
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/testcard/thumbs/hrtv_zgrb-thumb.jpg">
-						<i class="pic-caption">Običan SMPTE testcard sa natpisom HRT-HRTV ZGRB. Ulovljeno tijekom probnog emitiranja HRT 5 na satelitu krajem 2017.</i>
+						<h6 class="thumbnail-description">Običan SMPTE testcard sa natpisom HRT-HRTV ZGRB. Ulovljeno tijekom probnog emitiranja HRT 5 na satelitu krajem 2017.</h6>
 							</div>
 						
 						
 					</div>
 		</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron clocks-jumbotron">
+				<h1 style="text-align:center;">Satovi</h1>
+	</div>
+</div>
 		
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Satovi (Dnevnik)</h1>
-				<p></p>
+		<div class="jumbotron">
 					<p style="font-size:12pt;">Sljedeći satovi bili su dio Dnevnika prije početka.</p>
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/clocks/thumbs/tvz_sat_1989-thumb.jpg">
+						<h6 class="thumbnail-description">TV Zagreb 1989. Direktna projekcija sata.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/clocks/thumbs/htv_1991_sat_1-thumb.jpg">
-						<i class="pic-caption">Raniji dio 1991. godine.</i>
-						
+						<h6 class="thumbnail-description">Raniji dio 1991. godine.</h6>
 						</div>
 						
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/clocks/thumbs/htv_1991_sat_2-thumb.jpg">
-						<i class="pic-caption">Kasniji dio 1991. godine. Deblje kazaljke i "crtice" minuta i sata.</i>
+						<h6 class="thumbnail-description">Kasniji dio 1991. godine. Deblje kazaljke i "crtice" minuta i sata.</h6>
 						</div>
 						
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/clocks/thumbs/hrt_sat_1998-thumb.jpg">
-						<i class="pic-caption">1998. godina.</i>
+						<h6 class="thumbnail-description">1995. - 1998.</h6>
 						</div>
 						
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/clocks/thumbs/hrt_sat_1999-thumb.jpg">
-						<i class="pic-caption">1999. godina.</i>
+						<h6 class="thumbnail-description">1999. godina.</h6>
 						</div>
 						
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/clocks/thumbs/hrt_sat_2001-thumb.jpg">
-						<i class="pic-caption">2001. godina.</i>
+						<h6 class="thumbnail-description">2001. godina.</h6>
 						</div>
 						
 							
@@ -135,7 +154,9 @@
 		</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<p>TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></p>
+</div>	
 </div>	
 
 </body>

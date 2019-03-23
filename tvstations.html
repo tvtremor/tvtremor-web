@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body onload="setNotifierJumbotron()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -44,27 +44,27 @@
 	</header>
 
 		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
+		<div class="jumbotron notifier-jumbotron" name="warning-jumbotron">
 				<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg" onclick="JumbotronCookieSet()">Zatvori</button>
+			<button class="btn btn-success btn-lg" onclick="jumbotronCookieSet()">Zatvori</button>
 		</div>
 		</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 					<h1>Javni TV kanali</h1>
 					</p></p>
 				<div class="row" style="margin-top:1.5em;">
-				<a class="hlogo" href="tvstations/hrt.html"><img class="HoverableLogo" src="img/logos/hrt.png"></a>
-				<a class="hlogo" href="tvstations/rtl.html"><img class="HoverableLogo RTLlogo" src="img/logos/rtl.png"></a>
-				<a class="hlogo" href="tvstations/novatv.html"><img class="HoverableLogo" src="img/logos/novatv.png"></a>
-				<a class="hlogo" href="tvstations/domatv.html"><img class="HoverableLogo" src="img/logos/domatv.png"></a>
+				<a class="hlogo" href="tvstations/hrt.html"><img class="hoverable-logo" src="img/logos/hrt.png"></a>
+				<a class="hlogo" href="tvstations/rtl.html"><img class="hoverable-logo RTLlogo" src="img/logos/rtl.png"></a>
+				<a class="hlogo" href="tvstations/novatv.html"><img class="hoverable-logo" src="img/logos/novatv.png"></a>
+				<a class="hlogo" href="tvstations/domatv.html"><img class="hoverable-logo" src="img/logos/domatv.png"></a>
 				</div>
 		</div>
 	</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 					<h1>Lokalni TV kanali</h1>
 					</p></p>
 				<div class="row" style="margin-top:2em;">
@@ -74,7 +74,7 @@
 	</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 					<h1>Ostali TV kanali</h1>
 					</p></p>
 				<div class="row" style="margin-top:2em;">
@@ -85,8 +85,10 @@
 	
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<p>TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></p>
 </div>	
+</div>
 	
 </body>
 

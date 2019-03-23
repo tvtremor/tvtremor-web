@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body onload="setNotifierJumbotron()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -44,7 +44,7 @@
 	</header>
 
 		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
+		<div class="jumbotron notifier-jumbotron" name="warning-jumbotron">
 				<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
 			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
 		</div>
@@ -57,7 +57,7 @@
 </div>	
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 				<div class="row" style="padding-top:1em;">
 				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/htv2_1992.jpg"><h6>HTV2 1992.</h6></span>
 				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_90s.png"><h6>HRT2 1997. - 2000.</h6></span>
@@ -74,7 +74,7 @@
 </div>	
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 				<div>
 				<p>Drugi program HRT-a emitira zabavni i dokumentarni sadržaj: dokumentarne filmove, crtane filmove, humoristične serije te sitcome. Drugi program na tadašnjoj Televiziji Zagreb "počinje" s emitiranjem 15. svibnja 1966. godine; isti dan se slavila deseta obljetnica TV-a i četrdeseta obljetnica radija. Tada se na frekvenciji drugog programa prikazivao talijanski RAI 2, a  29. rujna 1972. godine kreće emitiranje programa TVZ2, koji se do 17. veljače 1973. nazivao eksperimentalnim. 1975. godine drugi program dobiva prijenos u boji. Drugi program je od početka zamišljen kao dokumentarni program, budući da je većinu rasporeda zauzimao repertoar dokumentarnih filmova, uz kvizove i zabavne emisije.</p>
 				</div>
@@ -89,7 +89,7 @@
 </div>	
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 						<div class="thumbnail img-responsive">
 							<img class="extendable-pic" src="/img/testcard/thumbs/jrt_zgrb2-thumb.jpg">
 							<h6 class="thumbnail-description">JRT Zagreb 2, 1989.</h6>
@@ -124,7 +124,7 @@
 </div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
 					<h2>Slike</h2>
 						<div class="row row-big">
@@ -147,7 +147,7 @@
 
 		
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 					<p>Prije prelaska na digitalno emitiranje, na početku, krajem ili usred emitiranja puštao se TV raspored, koji je sadržao slijedeći program ili program za današnji dan (budući da je noćni TV raspored puštan u ranim jutarnjim satima).</p>
 						<h2>Slike</h2>
 						<div class="row row-big">
@@ -171,7 +171,7 @@
 </div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 			
 			<p>PP ili promidžbeni program označava početak i završetak reklamnog bloka.</p>
 		
@@ -187,8 +187,11 @@
 </div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<p>TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></p>
 </div>	
+</div>
+
 </body>
 
 </html>

@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body onload="setNotifierJumbotron()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -44,43 +44,55 @@
 	</header>
 
 		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
+		<div class="jumbotron notifier-jumbotron" name="warning-jumbotron">
 				<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
 			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
 		</div>
 		</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Peti program HRT-a</h1>
-					</p></p>
-				<div class="row" style="margin-top:2em;">
-				<img class="HoverableLogo list-logo HRTlogo" src="/img/stations/hrt5.png">
-				</div>
-				<p></p>
-		</div>
+		<div class="jumbotron program-jumbotron">
+				<h1 style="text-align:center;">Peti program HRT-a</h1>
 	</div>
+</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Općenito</h1>
-					</p></p>
-				<div style="margin-top:2em;">
-				<p></p>
+			<div class="jumbotron">
+				<div class="row">
+				<img class="hoverable-logo" src="/img/stations/hrt5.png">
 				</div>
 		</div>
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Test kartice</h1>
-							<i>Na frekvenciji HRT 5 primijećen je samo jedan testcard. Kada eksperimentalno emitiranje još nije krenulo, prikazivala se SMPTE testna slika s natpisom <b>HR-HRTV ZGRB</b>. Budući da nema nikakve naznake o broju kanala, taj testcard se svrstava pod općeniti HRT-ov. Možete ga naći na odjeljku za HRT.</i>							
-					</div>
+		<div class="jumbotron general-jumbotron">
+				<h1 style="text-align:center;">Općenito</h1>
+	</div>
+</div>		
+	
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron">
+				<p>HRT5 pokrenut je 1. siječnja 2018. godine i sadrži program namijenjen za iseljenike. Emitira se na satelitu te nije dostupan unutar Republike Hrvatske.</p>
 		</div>
+	</div>
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron testcard-jumbotron">
+				<h1 style="text-align:center;">Test kartice</h1>
+	</div>
+</div>			
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+			<i>Na frekvenciji HRT 5 zamijećena je samo jedna testna kartica. Kada eksperimentalno emitiranje još nije krenulo, prikazivala se SMPTE testna slika s natpisom <b>HR-HRTV ZGRB</b>. Budući da nema nikakve naznake o broju kanala, ta testna kartica se svrstava pod općenitu HRT-ovu. Možete ju pronaći na odjeljku HRT-a.</i>							
+		</div>
+	</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<p>TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></p>
 </div>	
+</div>
 
 </body>
 

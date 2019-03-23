@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body onload="setNotifierJumbotron()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -44,32 +44,36 @@
 	</header>
 	
 	<div class="container center">
-		<div class="jumbotron RedNotify">
+		<div class="jumbotron notifier-jumbotron">
 			<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg" onclick="JumbotronCookieSet()">Zatvori</button>
+			<button class="btn btn-success btn-lg" onclick="jumbotronCookieSet()">Zatvori</button>
 		</div>
 	</div>
+	
+	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 				<h1>Sve što ste ikada htjeli znati o TV-u.</h1>
 				<p>Zanima li Vas kakvu je špicu Dnevnik HRT-a imao osamdesetih godina prošloga stoljeća? Interesira li Vas grafički dizajn neke televizije iz ranog 21. stoljeća? Želite li saznati kako identificirati starost snimke pomoću vizualnih elemenata? Na pravom ste mjestu. TVtremor pokriva sve televizijske kanale* u Hrvatskoj: od početka TVZ-a u sastavu JRT pa sve do HRT-a 5!</p>
 				<em>* trenutno u "sve kanale" spadaju samo javne televizijske kuće, a to su HRT, RTL i Nova TV. Kroz vrijeme će se repertoar proširiti i na lokalne televizije, poput VTV, Z1...</em>
 			</div>
 			
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 				<h1>Prijedlozi, žalbe i pohvale</h1>
 				<p>Imate li nešto za predložiti, na nešto se požaliti ili nešto pohvaliti? Ukoliko to želite učiniti privatnim putem, poruku pošaljite na adresu e-pošte koja se nalazi <a href="mailto:tvtremor@gmail.com">ovdje</a>, a ukoliko to želite objaviti javno, posjetite Twitter račun kanala koji se nalazi <a href="https://twitter.com/TVtremorHR">ovdje</a>. Poveznice za kontakt su Vam uvijek pri ruci zahvaljujući poveznicama koje se nalaze na vrhu stranice.</p>
 			</div>
 			
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 				<h1>Pristup RTV sadržaju</h1>
 				<p>Budući da YouTube svojim reenkodiranjem spušta kvalitetu videa i ponekad briše kanale s vrijednim materijalima, TVtremor stranica ima i svoj Google Drive arhiv. Njemu možete pristupiti klikom <a href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">ovdje</a> ili klikom na stavku Arhiv na vrhu stranice.</p>
 			</div>
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<p>TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></p>
 </div>	
+</div>
 	
 </body>
 

@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body onload="setNotifierJumbotron()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -44,23 +44,30 @@
 	</header>
 
 		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
+		<div class="jumbotron notifier-jumbotron" name="warning-jumbotron">
 			<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg" onclick="JumbotronCookieSet()">Zatvori</button>
+			<button class="btn btn-success btn-lg" onclick="jumbotronCookieSet()">Zatvori</button>
 		</div>
 		</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Kada je kanal nastao i na koju inicijativu?</h1>
-				<p>TVtremor je nastao uoči Božića 2017. godine, kada sam na DVD-u koji je godinama stajao u ladici pronašao jednu odjavu HRT-a iz 2006. Budući da sličnoga nije bilo na YouTubeu, materijal sam odlučio prenijeti na novi kanal; sadašnji TVtremor. Uz to sam imao i mnogo materijala na hard disku kojeg više nije bilo na YouTubeu, pa sam isti odlučio ponovno prenijeti, kako bi drugima pomogao u arhiviranju, a i sačuvao bitan dio povijesti. Imam 18 godina pa sam u nekim stvarima vezanima uz povijest možda u krivu, budući da nagađam zbog svoje mladosti.</p>
-				<p>Stranicu sam samostalno napisao koristeći HTML, CSS, JS i Bootstrap.</p>
+		<div class="jumbotron about-jumbotron">
+				<h1 style="text-align:center;">Kada i zašto je ova stranica nastala?</h1>
+	</div>
+</div>
+	
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron">
+				<p>TVtremor je nastao uoči Božića 2017. godine, s ciljem prezervacije i arhiviranja televizijskog sadržaja i informacija o emitiranju televizije na teritoriju bivše Jugoslavije. Stranica sadrži fotografije, informacije i videozapise o televizijskom emitiranju.</p>
+				<p>Cjelokupan sadržaj otvorenog je koda, dostupan na <a href="http://github.com/tvtremor/tvtremor-web" target="_blank">GitHubu</a> i svatko ima mogućnost izmijeniti, kopirati, koristiti te spremiti sadržaj, uz obavezno navođenje autora stranice. Također postoji i <a href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Google Drive arhiv</a>, <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank">YouTube kanal</a> te <a href="http://twitter.com/TVtremorHR">Twitter račun</a>.</p>
 				</div>
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<p>TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></p>
 </div>	
+</div>
 	
 	
 </body>

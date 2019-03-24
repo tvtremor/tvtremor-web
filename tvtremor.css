@@ -18,13 +18,15 @@ height:100%;
 background: rgb(240,240,240);
 }
 
-@keyframes GrayscaleToColor{
+a:hover{text-decoration:none;}
+
+/*@keyframes GrayscaleToColor{
 0% {filter:grayscale(100%);}
 25% {filter:grayscale(75%);}
 50% {filter:grayscale(50%);}
 75% {filter:grayscale(25%);}
 100% {filter:grayscale(0%);}	
-}
+}*/
 
 .hoverable-logo{
 width:auto;
@@ -33,13 +35,10 @@ filter:grayscale(100%);
 margin-left:2em;
 }
 
-.hoverable-logo:hover{
-animation: GrayscaleToColor 0.1s;	
-animation-fill-mode: forwards;
-}
+.hoverable-logo:hover{filter:grayscale(0%);}
 
-@media (max-width:320px){
-.row{text-align:center;}
+@media (max-width:480px){
+.row{text-align:left;}
 }
 
 img.extendable-pic{
@@ -49,13 +48,9 @@ height:192px;
 }
 	
 .bold-link{font-weight:bold;}
-
 a{cursor:pointer;}
-
 p.small{font-size:12pt;	display:block;}
-
 .navbar-tvtremor{background-color:rgb(250,250,250);border-radius:0px;}
-
 .menu-item{color:#010101;}
 
 .thumbnail{
@@ -71,6 +66,8 @@ min-width:32px;
 text-align:center;
 }
 
+.description-text{text-align:center}
+
 .thumbnail-description{max-width:192px; text-align:left;}
 .testcard-jumbotron{background: linear-gradient(135deg, #42cbf4 0%,#6bea91 100%);}
 .schedule-jumbotron{background: linear-gradient(135deg, #ff3019 0%,#ffb2b2 100%);}
@@ -83,6 +80,7 @@ text-align:center;
 .clocks-jumbotron{background: linear-gradient(135deg, #7eeab4 0%,#d86e70 100%);}
 .about-jumbotron{background: linear-gradient(135deg, #c12626 0%,#50a4e5 100%);}
 .other-jumbotron{background: linear-gradient(135deg, #ff5659 0%,#faff0a 100%);}
+.logo-jumbotron{background: linear-gradient(135deg, #ad9ffc 0%,#1caf11 100%)}
 
 .jumbotron{background-color:#fafafa;}
 .foot-jumbotron{background-color:rgb(88,89,90);}

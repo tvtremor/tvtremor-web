@@ -39,7 +39,7 @@ animation-fill-mode: forwards;
 }
 
 @media (max-width:320px){
-.row .row-big{text-align:left;}
+.row{text-align:center;}
 }
 
 img.extendable-pic{

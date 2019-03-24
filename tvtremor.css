@@ -82,6 +82,7 @@ text-align:center;
 .notifier-jumbotron{background-color:rgb(220,53,69);color:rgb(248,249,250);display:none;}
 .clocks-jumbotron{background: linear-gradient(135deg, #7eeab4 0%,#d86e70 100%);}
 .about-jumbotron{background: linear-gradient(135deg, #c12626 0%,#50a4e5 100%);}
+.other-jumbotron{background: linear-gradient(135deg, #ff5659 0%,#faff0a 100%);}
 
 .jumbotron{background-color:#fafafa;}
 .foot-jumbotron{background-color:rgb(88,89,90);}

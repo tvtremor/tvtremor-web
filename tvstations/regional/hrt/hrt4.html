@@ -15,24 +15,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="setNotifierJumbotron()">
+<body>
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="/index.html">TVtremor</a>
+					<a class="navbar-brand" href="#">TVtremor</a>
 				</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a  class="menu-item" href="/index.html">Početna</a></li>
-				<li><a class="menu-item" href="/about.html">O projektu</a></li>
-				<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-				<li><a class="menu-item" href="/radio.html">Radio</a></li>
-				<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-				<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
-
 				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Kontakt <span class="caret"></span></a>
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i><i class="navbar-menu-item">Izbornik</i></a>
 					<ul class="dropdown-menu">
+						<li><a class="menu-item" href="index.html">Početna</a></li>
+						<li><a class="menu-item" href="/about.html">O projektu</a></li>
+						<li class="active"><a class="menu-item" href="#">TV stanice</a></li>
+						<li><a class="menu-item" href="/radio.html">Radio</a></li>
+						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
+					</ul>
+				</li>
+				
+				<li class="dropdown">
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-address-book"></i><i class="navbar-menu-item">Kontakt</i></a>
+					<ul class="dropdown-menu">	
 						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
 						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 					</ul>
@@ -42,13 +47,6 @@
 			</div>
 		</nav>
 	</header>
-
-		<div class="container center">
-		<div class="jumbotron notifier-jumbotron" name="warning-jumbotron">
-				<p>&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
-		</div>
-		</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
 		<div class="jumbotron program-jumbotron">

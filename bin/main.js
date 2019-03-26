@@ -7,21 +7,25 @@ Dark mode/Tamni mod
 
 */
 
-function jumbotronCookieSet(){
-localStorage.setItem("showjumbotron", "false");
-setNotifierJumbotron();
+/*function doPageWork(){
+	var modeSelection = localStorage.getItem("dark_mode");
+	
+	if(modeSelection=="true"){
+		toggleDarkMode();
+	}
+	
 }
 
-function setNotifierJumbotron()
-	{
-		var notifierJumbotronSetting = localStorage.getItem("showjumbotron");
-		var notifierJumbotronObject = document.getElementsByClassName("notifier-jumbotron");
-
-		if(notifierJumbotronSetting=="false")
-			{notifierJumbotronObject[0].style.display = "none";}
-		else
-			{notifierJumbotronObject[0].style.display = "block";}
-	}
+function toggleDarkMode(){
+	var modeSelection = localStorage.getItem("dark_mode");
+	if(modeSelection=="false" || modeSelection=="" || modeSelection==undefined)
+		localStorage.setItem("dark_mode", "true");
+	else if (modeSelection=="true")
+		localStorage.setItem("dark_mode", "false");
+	location.reload();
+	yield;
+}
+*/
 
 $(document).on("click",".extendable-pic", function () {
    var clickedBtnSrc = $(this).attr('src');

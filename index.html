@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body>
+<body onload="doPageWork()">
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -37,8 +37,12 @@
 						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Kontakt</li>
-						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
-						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li><a class="menu-item" href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
+						<li><a class="menu-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Postavke</li>
+						<li><a class="menu-item" href="#" onclick="toggleDarkMode()">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						<li><a class="menu-item" href="#" onclick="toggleDarkMode()">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
 					</ul>
 					</ul>
 				</li>	

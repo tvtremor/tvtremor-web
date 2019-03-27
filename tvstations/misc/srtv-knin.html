@@ -6,16 +6,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TVtremor</title>
-	<link href="/bin/bootstrap.min.css" rel="stylesheet">
-	<script src="/bin/jquery-3.3.1.min.js"></script>
-	<script src="/bin/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body>
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -23,90 +23,108 @@
 					<a class="navbar-brand" href="/index.html">TVtremor</a>
 				</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a  class="menu-item" href="/index.html">Početna</a></li>
-				<li><a class="menu-item" href="/about.html">O projektu</a></li>
-				<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-				<li><a class="menu-item" href="/radio.html">Radio</a></li>
-				<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-				<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
-
+				
 				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Kontakt <span class="caret"></span></a>
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
+						<li><a class="menu-item" href="/index.html">Početna</a></li>
+						<li><a class="menu-item" href="/about.html">O projektu</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Sadržaj</li>
+						<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
+						<li><a class="menu-item" href="/radio.html">Radio stanice</a></li>
+						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Kontakt</li>
 						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
 						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Postavke</li>
+						<li><a class="menu-item" href="#">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						<li><a class="menu-item" href="#">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
 					</ul>
-				</li>
-			</ul>
+					</ul>
+				</li>	
+					</ul>
 			
 			</div>
 		</nav>
 	</header>
 
-		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
-				<p style="transform:translateY(-25%);">&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
-		</div>
-		</div>
-	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>SRTV Knin</h1>
-				<div class="row" style="margin-top:2em;">
-				<h2>Logotipi</h2>
-				<img class="list-logo" src="../../img/logos/srtv-knin/1.png">
-				<img class="list-logo" src="../../img/logos/srtv-knin/2.png">
-				<img class="list-logo" src="../../img/logos/srtv-knin/3.png">
-				</div>
-				<p></p>
-		<p class="small-p">S lijeva na desno: srtv knin (1993), rtv rsk (1993), SRT Krajine (1994).</p>
-		</div>
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron program-jumbotron">
+				<h1 style="text-align:center;">Srpska radiotelevizija Knin (SRTV Knin)</h1>
 	</div>
+</div>	
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Općenito</h1>
-					</p></p>
-				<div style="margin-top:2em;">
-				<p>Srpska televizija Knin (skraćeno SRTV Knin, ponekad i RTV RSK i SRT Krajine) bila je lokalna TV stanica emitirana na području tadašnje Republike Srpske Krajine, točnije grada Knina, koji je bio glavni grad te ilegalne paradržave. Iako stanica koristi ćirilićno pismo i srpskohrvatski jezik, emitirala se na teritoriju koji pripada RH pa zato djelomično pripada "hrvatskim" TV stanicama. Stanica je vjerojatno osnovana 1991. ili 1992. godine i vrlo malo se o njoj zna. 29. prosinca 1993. vlada RSK zabranjuje rad stanice te je ona prisilno ugašena početkom siječnja 1994. kada je prisilno ugašen odašiljač na brdu Konj. 2. siječnja 1994. na Plitvicama, uz pomoć tehničara i novinara s Televizije Novi Sad, pokrenuta je Srpska Radiotelevizija (SRT) Krajine. RSK je uz TV Knin i SRT Krajine posjedovala još dvije stanice: TV Beli Manastir, o kojoj nema niti jednog dokumenta, slike ili tonskog zapisa što bi dokazali njeno postojanje, te stanicu TV Petrova Gora, koja je po profesionalnosti rada vjerojatno bila višestruko lošija od SRTV Knin.</p>
-				</div>
-		</div>
-	</div>
-	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Emisije</h1>
-					</p></p>
-				<div style="margin-top:2em;">
-				<p>Jedini materijali koji trenutno postoje, a da su napravljeni od strane SRTV Knin su Dnevnik, uglavnom ispunjen propagandom protiv HV-a, predsjednički izbori 1993. te par reklama očajne produkcije.</p>				
+			<div class="jumbotron">
+				<div class="row">
+				<span class="thumbnail img-responsive"><img class="list-logo" src="/img/logos/srtv-knin/1.png"><h6 class="thumbnail-description">srtv knin, 1993.</h6></span>
+				<span class="thumbnail img-responsive"><img class="list-logo" src="/img/logos/srtv-knin/2.png"><h6 class="thumbnail-description">rtv rsk, 1993.</h6></span>
+				<span class="thumbnail img-responsive"><img class="list-logo" src="/img/logos/srtv-knin/3.png"><h6 class="thumbnail-description">SRT Krajine, 1994.</h6></span>
+				<span class="thumbnail img-responsive"><img class="list-logo" src="/img/logos/srtv-knin/4.png"><h6 class="thumbnail-description">rtrsk, ožujak 1995.</h6></span>
 				</div>
 		</div>
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Test kartice</h1>
-							<p></p>
-							<i>Trenutno ne postoje nikakve naznake o test kartici (ili više njih) koja se koristila pri prekidu programa na SRTV Knin. Vjerojatno je da je samim time gašen i odašiljač signala, budući da je elektroenergetska opskrba RSK bila u vrlo lošem stanju.</i>
-							</div>
+		<div class="jumbotron general-jumbotron">
+				<h1 style="text-align:center;">Općenito</h1>
+	</div>
+</div>
+
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron">
+				<p>Srpska televizija Knin (skraćeno SRTV Knin, ponekad i RTV RSK i SRT Krajine) bila je lokalna TV stanica emitirana na području tadašnje tzv. Republike Srpske Krajine, točnije grada Knina, glavnog grada. Iako stanica koristi ćirilićno pismo i srpskohrvatski jezik, emitirala se na teritoriju koji pripada RH pa zato djelomično pripada "hrvatskim" TV stanicama. Stanica je vjerojatno osnovana 1991. ili 1992. godine i vrlo malo se o njoj zna. 29. prosinca 1993. vlada RSK zabranjuje rad stanice te je ona prisilno ugašena početkom siječnja 1994. kada je prisilno ugašen odašiljač na brdu Konj. 2. siječnja 1994. na Plitvicama, uz pomoć tehničara i novinara s Televizije Novi Sad, pokrenuta je Srpska Radiotelevizija (SRT) Krajine, podružnica SRT kuće, koja se emitirala na području Republike Srpske, sve do preimenovanja u RTRS. RSK je uz TV Knin i SRT Krajine posjedovala još dvije stanice: TV Beli Manastir, o kojoj se trenutno ne zna mnogo osim pismenih spomena, stanicu TV Petrova Gora i stanicu TV Vukovar.</p>
 		</div>
+	</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Identi</h1>
-							<div class="ImgWithCom">
-							<img class="extendable-pic" src="../../img/idents/thumbs/srtv_knin-thumb.jpg">
-							<i class="pic-caption">Jedini ident SRTV Knin iz 1993. Grafička izrada je prilično loša.</i>
+		<div class="jumbotron broadcast-jumbotron">
+				<h1 style="text-align:center;">Emisije</h1>
+	</div>
+</div>		
+
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron">
+				<p>Jedini materijali koji trenutno postoje, a da su napravljeni od strane SRTV Knin su Dnevnik, predsjednički izbori 1993. te par reklama. Također, postoje i dnevnici u razdoblju imena RTV RSK i SRT Krajine te dokumentarni film o Vojniću, koji je snimljen u ožujku 1995. i emitiran kao dio programa "Dobro veče, Krajino", kada se stanica nazivala RTRSK.</p>
+		</div>
+	</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron testcard-jumbotron">
+				<h1 style="text-align:center;">Test kartice</h1>
+	</div>
+</div>	
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+	<div class="jumbotron">
+		<i>Trenutno ne postoje nikakve naznake o test kartici (ili više njih) koja se koristila pri prekidu programa na SRTV Knin. Vjerojatno je da je samim time gašen i odašiljač signala, sudeći po uvjetima elektroenergetske opskrbe RSK.</i>
+	</div>
+</div>
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron ident-jumbotron">
+				<h1 style="text-align:center;">Identi</h1>
+	</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/thumbs/srtv_knin-thumb.jpg">
+							<h6 class="thumbnail-description">Jedini ident SRTV Knin iz 1993. Glazba u pozadini je Joe Satriani - Surfing with the Alien.</h6>
 							</div>
-		<p></p>
-		<p class="small">Video verziju možete pronaći u TVtremor arhivu pod kategorijom Identi.</p>
 		</div>
 </div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>	
+</div>
 
 </body>
 

@@ -6,16 +6,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TVtremor</title>
-	<link href="/bin/bootstrap.min.css" rel="stylesheet">
-	<script src="/bin/jquery-3.3.1.min.js"></script>
-	<script src="/bin/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body>
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -23,55 +23,69 @@
 					<a class="navbar-brand" href="/index.html">TVtremor</a>
 				</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a  class="menu-item" href="/index.html">Početna</a></li>
-				<li><a class="menu-item" href="/about.html">O projektu</a></li>
-				<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-				<li><a class="menu-item" href="/radio.html">Radio</a></li>
-				<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-				<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
-
+				
 				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Kontakt <span class="caret"></span></a>
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
+						<li><a class="menu-item" href="/index.html">Početna</a></li>
+						<li><a class="menu-item" href="/about.html">O projektu</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Sadržaj</li>
+						<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
+						<li><a class="menu-item" href="/radio.html">Radio stanice</a></li>
+						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Kontakt</li>
 						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
 						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Postavke</li>
+						<li><a class="menu-item" href="#">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						<li><a class="menu-item" href="#">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
 					</ul>
-				</li>
-			</ul>
+					</ul>
+				</li>	
+					</ul>
 			
 			</div>
 		</nav>
 	</header>
 
-		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
-				<p style="transform:translateY(-25%);">&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
-		</div>
-		</div>
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron program-jumbotron">
+				<h1 style="text-align:center;">Treći program HRT-a</h1>
+	</div>
+</div>	
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Treći program HRT-a</h1>
-					</p></p>
-				<div class="row" style="padding-top:1em;">
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/z3_prvi.png"><h6 class="thumbnail-description">Z3 1989.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/z3_drugi.png"><h6 class="thumbnail-description">HTV Z3 1990.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_1994.png"><h6 class="thumbnail-description">HRT3 1994.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/htv3_90s.png"><h6 class="thumbnail-description">HRT3 1997. - 2000.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/htv3_90s_alt.png"><h6 class="thumbnail-description">HRT3 1997. - 2000. (drugi)</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_old.png"><h6 class="thumbnail-description">HRT3 2001. - 2004.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_2012.png"><h6 class="thumbnail-description">Novi HRT3 2012.</h6></span>
+			<div class="jumbotron">
+				<div class="row">
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/z3_prvi.png"><h6 class="thumbnail-description">Z3, 1989.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/z3_drugi.png"><h6 class="thumbnail-description">HTV Z3, 1990.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/htv3_1994.jpg"><h6 class="thumbnail-description">HTV3, 1994.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_1994.png"><h6 class="thumbnail-description">HTV3, 1994.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/htv3_90s.png"><h6 class="thumbnail-description">HTV3, 1997. - 1999.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/htv3_90s_alt.png"><h6 class="thumbnail-description">HTV3, 1997. - 1999. (drugi)</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_old.png"><h6 class="thumbnail-description">HTV3, 2001. - 2004.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_2012.png"><h6 class="thumbnail-description">HRT3, 2012.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_2012_trojka.png"><h6 class="thumbnail-description">HRT3, 2012.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_2018.png"><h6 class="thumbnail-description">HRT3, 2018.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt3/hrt3_2019.png"><h6 class="thumbnail-description">HRT3, trenutni logo.</h6></span>
 				</div>
 				<p></p>
 		</div>
 	</div>
-	
+
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron general-jumbotron">
+				<h1 style="text-align:center;">Općenito</h1>
+	</div>
+</div>	
+
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Općenito</h1>
-					</p></p>
-				<div style="margin-top:2em;">
+			<div class="jumbotron">
 				<p>Treći program HRT-a (u daljnjem tekstu HTV3, prije gašenja 2004. godine) nekad je bio program namijenjen izričito za zabavni sadržaj. Na njemu su se emitirale serije, filmovi i dječji crtani filmovi te sportski program (NBA, nogomet, F1). Ideja trećeg programa TV Zagreb realizirala se u svibnju 1988. kada započinje eksperimentalno emitiranje TVZ3, na kojem su se prenosili MTV-jevi spotovi i <i>Zagrebačka panorama</i>. Program je krenuo sa Zagrebačkog velesajma 11. studenoga 1989. s logotipom Z3. U svojim ranijim danima, funkcionirao je kao koproducijski program te TVZ uskače u pomoć s filmovima, serijama i dokumentarcima. U početku, mogao se gledati samo iz Zagreba, no kasnije se proširio na veći dio Hrvatske. Neke od poznatih emisija programa Z3 bile su <i>Metalmania</i>, <i>Hit depo</i>, <i>Pinklec na rame</i>, a prenosili su se i strani satelitski programi poput Screensporta i RTL-a Plus. 1. ožujka 1991. prelazi u HRT te tako HRT dobiva i treći program. Zbog rata te počinjenih šteta na većini odašiljača u RH, u rujnu 1991. HTV1 emitirao se na frekvencijama HTV3, sve do studenog 1994. HTV3 prekida emitiranje 28. ožujka 2004. zbog izglasanog prijenosa koncesije u Hrvatskom saboru, koja je pripala RTL Televiziji. HRT3 započeo je s emitiranjem 15. rujna 2012. HRT3 okrenut je sadržaju visoke umjetničke vrijednosti i na njemu se emitiraju koncerti, strani filmski i serijski programi te umjetnička zbivanja uživo.</p>
 				</div>
 		<h2>
@@ -79,26 +93,161 @@
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Test kartice</h1>
-				
-						<div class="ImgWithCom">
+		<div class="jumbotron testcard-jumbotron">
+				<h1 style="text-align:center;">Test kartice</h1>
+	</div>
+</div>		
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+						<div class="thumbnail img-responsive">
 						<img class="extendable-pic" src="/img/testcard/thumbs/jrt_htv3-thumb.jpg">
+						<h6 class="thumbnail-description">JRT HTV3, 1990. godina.</h6>
 						</div>
 				
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 							<img class="extendable-pic" src="/img/testcard/thumbs/htv3-thumb.jpg">
+							<h6 class="thumbnail-description">HTV3, 1991. godina.</h6>
 							</div>
 							
-						<div class="ImgWithCom">
+						<div class="thumbnail img-responsive">
 							<img class="extendable-pic" src="/img/testcard/thumbs/hrt3-thumb.jpg">
+							<h6 class="thumbnail-description">HRT3, 1994. - 2004.</h6>
 						</div>
 
 					</div>
 		</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+		<div class="jumbotron ident-jumbotron">
+				<h1 style="text-align:center;">Identi</h1>
+	</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
+					<h2>Slike</h2>
+						<div class="row">
+							
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/idents/htv3/thumbs/htv3_1996-thumb.jpg">
+								<h6 class="thumbnail-description">HTV3, 1996.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/idents/htv3/thumbs/htv3_1998-thumb.jpg">
+								<h6 class="thumbnail-description">HTV3, 1998.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/idents/htv3/thumbs/htv3_2001-thumb.jpg">
+								<h6 class="thumbnail-description">HTV3, 2001.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/idents/htv3/thumbs/hrt3_2012-thumb.jpg">
+								<h6 class="thumbnail-description">HRT3, 2012.</h6>
+							</div>
+						
+						</div>
+	
+		</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron schedule-jumbotron">
+				<h1 style="text-align:center;">TV raspored</h1>
+	</div>
+</div>
+
+		
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+					<p>Prije prelaska na digitalno emitiranje, na početku, krajem ili usred emitiranja puštao se TV raspored, koji je sadržao slijedeći program ili program za današnji dan (budući da je noćni TV raspored puštan u ranim jutarnjim satima).</p>
+						<h2>Slike</h2>
+						<div class="row">
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_1991-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 1991.</h6>
+					</div>
+					
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_1995-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 1995.</h6>
+					</div>
+					
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_1996-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 1996.</h6>
+					</div>
+					
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_1997-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 1997.</h6>
+					</div>
+					
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_1998-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 1998.</h6>
+					</div>
+					
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_2001-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 2001.</h6>
+					</div>
+					
+					<div class="thumbnail img-responsive">
+					<img class="extendable-pic" src="/img/schedule/htv3/thumbs/htv3_2004-thumb.jpg">
+					<h6 class="thumbnail-description">HTV3, 2004.</h6>
+					</div>
+					
+					
+					</div>
+					<h4>Najave programa ukinute su zajedno s analognim emitiranjem, čije je gašenje trajalo kroz 2010. i 2011. godinu. Raspored programa od tada je moguće naći na teletekstu ili na HRT web stranici.</h4>
+					<h2>Glazba</h2>
+					<p>1998. Madonna - Justify my Love (Instrumental) <a href="https://www.youtube.com/watch?v=AqvwWUSlOV4" target="_blank">[YouTube]</a> <a href="/audio/justify_my_love.mp3" target="_blank">[MP3]</a></p>
+					<p>1999. - 2001. - Nepoznat autor</p>
+					<p>2001. Yanni - Within Attraction <a href="https://www.youtube.com/watch?v=8mLA54m9vAE" target="_blank">[YouTube]</a> <a href="/audio/yanni_within_attraction.mp3" target="_blank">[MP3]</a></p>
+					<p>2001. - 2004. - Neal Schon - Espanique <a href="https://www.youtube.com/watch?v=J9E69mo0eRQ" target="_blank">[YouTube]</a> <a href="/audio/neal_schon_espanique.mp3" target="_blank">[MP3]</a></p>
+					</div>
+		</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron pp-jumbotron">
+				<h1 style="text-align:center;">PP (promidžbeni program)</h1>
+	</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+			
+			<p>PP ili promidžbeni program označava početak i završetak reklamnog bloka.</p>
+				<div class="row">				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv3_z3_pp_1991-thumb.jpg">
+						<h6 class="thumbnail-description">HTV Z3, 1991.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv3_pp_1996-thumb.jpg">
+						<h6 class="thumbnail-description">HTV3, 1996.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv3_pp_2001_narancasti-thumb.jpg">
+						<h6 class="thumbnail-description">HTV3, 2001. - 2004.</h6>
+						</div>
+				
+			</div>
+		
+		</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+<div class="jumbotron foot-jumbotron">
+<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
+</div>	
 </div>	
 
 </body>

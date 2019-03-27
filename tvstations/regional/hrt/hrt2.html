@@ -6,16 +6,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TVtremor</title>
-	<link href="/bin/bootstrap.min.css" rel="stylesheet">
-	<script src="/bin/jquery-3.3.1.min.js"></script>
-	<script src="/bin/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body>
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -23,33 +23,35 @@
 					<a class="navbar-brand" href="/index.html">TVtremor</a>
 				</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a  class="menu-item" href="/index.html">Početna</a></li>
-				<li><a class="menu-item" href="/about.html">O projektu</a></li>
-				<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-				<li><a class="menu-item" href="/radio.html">Radio</a></li>
-				<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-				<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
-
+				
 				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Kontakt <span class="caret"></span></a>
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
+						<li><a class="menu-item" href="/index.html">Početna</a></li>
+						<li><a class="menu-item" href="/about.html">O projektu</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Sadržaj</li>
+						<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
+						<li><a class="menu-item" href="/radio.html">Radio stanice</a></li>
+						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Kontakt</li>
 						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
 						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Postavke</li>
+						<li><a class="menu-item" href="#">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						<li><a class="menu-item" href="#">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
 					</ul>
-				</li>
-			</ul>
+					</ul>
+				</li>	
+					</ul>
 			
 			</div>
 		</nav>
 	</header>
 
-		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
-				<p style="transform:translateY(-25%);">&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
-		</div>
-		</div>
-	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
 		<div class="jumbotron program-jumbotron">
 				<h1 style="text-align:center;">Drugi program HRT-a</h1>
@@ -57,12 +59,17 @@
 </div>	
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-				<div class="row" style="padding-top:1em;">
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/htv2_1992.jpg"><h6>HTV2 1992.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_90s.png"><h6>HRT2 1997. - 2000.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_old.png"><h6>HRT2 2000. - 2008.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_predtv.png"><h6>HRT2 2008. - 2010.</h6></span>
+			<div class="jumbotron">
+				<div class="row">
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/htv2_1992.jpg"><h6>HTV2, 1992.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_90s.png"><h6>HRT2, 1997. - 1999.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_1999_prozirni.jpg"><h6>HRT2, 1999. i 2000.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_old.png"><h6>HRT2, 2000. - 2008.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_predtv.png"><h6>HRT2, 2008. - 2010.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_dubrovnik.jpg"><h6>HRT2, studio Dubrovnik.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_2016.png"><h6>HRT2, 2016. Ubrzo povučen.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/hrt2/hrt2_trenutni.png"><h6>HRT2, trenutni logo.</h6></span>
+				<h6 class="description-text">Županijska panorama prenosi se izravno iz lokalnih studija (Bjelovar, Dubrovnik, Osijek...) i svaki studio ima svoj logo.</h6>
 				</div>
 		</div>
 	</div>
@@ -74,7 +81,7 @@
 </div>	
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
+			<div class="jumbotron">
 				<div>
 				<p>Drugi program HRT-a emitira zabavni i dokumentarni sadržaj: dokumentarne filmove, crtane filmove, humoristične serije te sitcome. Drugi program na tadašnjoj Televiziji Zagreb "počinje" s emitiranjem 15. svibnja 1966. godine; isti dan se slavila deseta obljetnica TV-a i četrdeseta obljetnica radija. Tada se na frekvenciji drugog programa prikazivao talijanski RAI 2, a  29. rujna 1972. godine kreće emitiranje programa TVZ2, koji se do 17. veljače 1973. nazivao eksperimentalnim. 1975. godine drugi program dobiva prijenos u boji. Drugi program je od početka zamišljen kao dokumentarni program, budući da je većinu rasporeda zauzimao repertoar dokumentarnih filmova, uz kvizove i zabavne emisije.</p>
 				</div>
@@ -89,7 +96,7 @@
 </div>	
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 						<div class="thumbnail img-responsive">
 							<img class="extendable-pic" src="/img/testcard/thumbs/jrt_zgrb2-thumb.jpg">
 							<h6 class="thumbnail-description">JRT Zagreb 2, 1989.</h6>
@@ -124,18 +131,45 @@
 </div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
 					<h2>Slike</h2>
-						<div class="row row-big">
+						<div class="row">
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_1992-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 1992.</h6>
+							</div>
 							
 							<div class="thumbnail img-responsive">
-								<img class="extendable-pic" src="">
-								<h6 class="thumbnail-description">Lorem ipsum</h6>
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_1996-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 1996.</h6>
 							</div>
-						
+							
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_1998-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 1998.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_1999_edited-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 1999. Rekreacija.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_2000-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 2000.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_2001-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 2001. - 2004.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+							<img class="extendable-pic" src="/img/idents/htv2/thumbs/htv2_2005_suma-thumb.jpg">
+							<h6 class="thumbnail-description">HTV2, 2005. Šuma.</h6>
+							</div>
 						</div>
-	
 		</div>
 </div>
 
@@ -147,22 +181,62 @@
 
 		
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-					<p>Prije prelaska na digitalno emitiranje, na početku, krajem ili usred emitiranja puštao se TV raspored, koji je sadržao slijedeći program ili program za današnji dan (budući da je noćni TV raspored puštan u ranim jutarnjim satima).</p>
-						<h2>Slike</h2>
-						<div class="row row-big">
-
-						<div class="thumbnail img-responsive">
-						<img class="extendable-pic" src="">
-						<h6 class="thumbnail-description">Lorem ipsum</h6>
-						
-						</div>
-						</div>
-						<p>Nedostaje: Lorem ipsum</p>
-					<h2>Glazba</h2>
-					<p>Lorem ipsum</p>
-					</div>
+		<div class="jumbotron">
+			<p>Prije prelaska na digitalno emitiranje, na početku, krajem ili usred emitiranja puštao se TV raspored, koji je sadržao slijedeći program ili program za današnji dan (budući da je noćni TV raspored puštan u ranim jutarnjim satima).</p>
+			<h2>Slike</h2>
+			<div class="row">
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_1991-thumb.jpg">
+				<h6 class="thumbnail-description">HTV2, 1991.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_1997-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, 1997.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_1998-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, 1998.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_1998_2-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, 1998.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_1999_2-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, kraj 1999.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_2000-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, 2000.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_2004-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, 2004.</h6>
+				</div>
+				
+				<div class="thumbnail img-responsive">
+				<img class="extendable-pic" src="/img/schedule/htv2/thumbs/htv2_2006-thumb.jpg">
+				<h6 class="thumbnail-description">HRT2, 2006.</h6>
+				</div>
+				
+			</div>
+		<h4>Najave programa ukinute su zajedno s analognim emitiranjem, čije je gašenje trajalo kroz 2010. i 2011. godinu. Raspored programa od tada je moguće naći na teletekstu ili na HRT web stranici.</h4>
+		
+		<h2>Glazba</h2>
+		<p>1991. Nepoznat autor</p>
+		<p>1992. Firebird - Finale - Star Inc <b>(u identu)</b> <a href="https://www.youtube.com/watch?v=goVSd_ZSIlE" target="_blank">[YouTube]</a> <a href="/audio/firebird_finale.mp3">[MP3]</a>
+		<p>1992. - 1994. Nepoznato</p>
+		<p>1995. - 2000. Zrinko Tutić (?)</p>
+		<p>2001. - 2004. Neal Schon - Zanzibar [MP3] <a href="https://www.youtube.com/watch?v=goVSd_ZSIlE" target="_blank">[YouTube]</a> <a href="/audio/neal_schon_zanzibar.mp3" target="_blank">[MP3]</a></p>
+		<p>2004. - 2008. - HRT najava 2007 <a href="https://www.youtube.com/watch?v=qnxPa-ZNeCU" target="_blank">[YouTube]</a> <a href="/audio/hrt_najava_2007.mp3" target="_blank">[MP3]</a></p>
 		</div>
+</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
 		<div class="jumbotron pp-jumbotron">
@@ -171,24 +245,81 @@
 </div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
+		<div class="jumbotron">
 			
 			<p>PP ili promidžbeni program označava početak i završetak reklamnog bloka.</p>
-		
-			<div class="row row-big">
-				<div class="thumbnail img-responsive">
-					<img class="extendable-pic" src="">
-					<h6 class="thumbnail-description">Lorem ipsum</h6>
+				<div class="row">				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv2_1990-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 1990.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv2_pp_1996-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 1996.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv2_pp_2001_sareni-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2001.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_perpetuum-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. Perpetuum mobile, početak.</h6>
+						</div>
+				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_perpetuum_kraj-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. Perpetuum mobile, kraj/kratka verzija.</h6>
+						</div>
+				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_sport-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. Sport, početak.</h6>
+						</div>
+				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_sport_kraj-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. Sport, kraj/kratka verzija.</h6>
+						</div>
+				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_tvknjizara-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. TV knjižara.</h6>
+						</div>
+				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_tvvodic-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. Gospodarstveni TV vodič.</h6>
+						</div>
+				
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_voda-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2006. - 2008. Motiv s čašom vode, kraj/kratka verzija.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv2_pp_2008_more-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2008. More.</h6>
+						</div>
+						
+						<div class="thumbnail img-responsive">
+						<img class="extendable-pic" src="/img/pp/htv/thumbs/htv2_pp_2008_oblaci-thumb.jpg">
+						<h6 class="thumbnail-description">HTV2, 2008. Oblaci.</h6>
+						</div>
 				</div>
 				
 			</div>
 		
 		</div>
-</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+<div class="jumbotron foot-jumbotron">
+<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>	
+</div>
+
 </body>
 
 </html>

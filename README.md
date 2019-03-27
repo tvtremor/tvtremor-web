@@ -1,6 +1,5 @@
-# tvtremor-web
-A website about the television in Croatia and ex-Yugoslavian countries
+#TVtremor-web
 
-**This branch contains checked and tested releases and can be used for publication to the Web. Check the Releases section to find milestone versions.**
+A site about the history of television in Croatia and ex-Yugoslavian countries
 
-# This site is located at http://tvtremor.ml.
+#Release 2019-m1.0

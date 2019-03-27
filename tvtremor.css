@@ -1,156 +1,110 @@
-/* TVtremor CSS
-Autor: TVtremor
-2019.
+/* TVtremor-web CSS
+Autor/Author: TVtremor
+Godina/Year: 2019.
 */
 
+/* General/Općenito */
+
 *{
-	text-decoration:none;
-	margin:0;
-	padding:0;
-	border:0;
-	font-family: 'Roboto', helvetica, arial, sans-serif;
+ text-decoration:none;
+ margin:0;
+ padding:0;
+ border:0;
+ font-family: 'Roboto', helvetica, arial, sans-serif;
+ text-decoration:none;
 }
 
 body{
-	width:100%;
-	height:100%;
-	background: rgb(240,240,240);
+ width:100%;
+ height:100%;
+ background: rgb(240,240,240);
 }
 
-.RedNotify{
-background-color:rgb(220,53,69);
-color:rgb(248,249,250);
-display:none;
+/* Images/Slike */
+.hoverable-logo{
+ width:auto;
+ height:40px;
+ filter:grayscale(100%);
+ margin-left:2em;
 }
+.hoverable-logo:hover{filter:grayscale(0%);}
 
-html{
-position:relative;
-min-height:100%;
+.extendable-pic{
+ width:240px;
+ height:auto;
+ cursor:pointer;
 }
-
-@keyframes GrayscaleToColor{
-0% {filter:grayscale(100%);}
-25% {filter:grayscale(75%);}
-50% {filter:grayscale(50%);}
-75% {filter:grayscale(25%);}
-100% {filter:grayscale(0%);}	
-}
-
-.HoverableLogo{
-width:auto;
-height:50px;
-filter:grayscale(100%);
-margin-left:2em;
-}
-
-.HoverableLogo:hover{
-animation: GrayscaleToColor 0.1s;	
-animation-fill-mode: forwards;
-}
-
-@media (max-width:320px){
-.row .row-big{
-	text-align:left;
-}
-}
-	 
-.list-logo{
-	margin-top:2em;
-}
-
-.FooterText{
-text-align:left;
-}
-
-i.pic-caption{
-display:inline-block;
-font-size:10pt;
-width:192px;
-position:absolute;
-top:192px;
-}
-
-img.extendable-pic{
-cursor:pointer;
-width:240px;
-height:192px;
-top:0;
-}
-
-.ImgWithCom{
-display:inline-block;	
-min-height:192px;
-height:240px;
-padding-right:240px;
-position:relative;
-}		
-
-.BoldLink{
-font-weight:bold;	
-}
-
-a{
-cursor:pointer;
-}
-
-p.small{
-font-size:12pt;	
-display:block;
-}
-
+	
+/* Bootstrap elements/elementi */
 .navbar-tvtremor{
-	background-color:rgb(250,250,250);border-radius:0px;
+ background-color:rgb(250,250,250);
+ border-radius:0px;}
+ 
+.navbar-menu-item{
+ display:inline-block;
+ font-style:normal;
+ margin-left:8px;
 }
 
-.menu-item{
-color:#010101;	
-}
+.description-text{text-align:center}
 
 .thumbnail{
-	min-height:32px;
-	min-width:96px;
-	vertical-align:top;
-	display:inline-block;
+ min-height:32px;
+ min-width:96px;
+ vertical-align:top;
+ display:inline-block;
 }
 
 .row{
-	min-height:96px;
-	min-width:32px;
-	text-align:center;
+ min-height:32px;
+ min-width:32px;
+ text-align:center;
 }
 
-.thumbnail-description{
-	max-width:192px;
+/* Menu items/Stavke izbornika */
+.dropdown-menu > .active > a{
+	background-color:#B22222;
 }
 
-.row-big{
-	text-align:left;
+.dropdown-menu > .active > a:hover{
+	background-color:#8B0000;
 }
 
-.testcard-jumbotron{
-	background: linear-gradient(135deg, #42cbf4 0%,#6bea91 100%);
-}
+/* Links/Linkovi */
+a:hover,
+a:focus,
+a:visited
+{text-decoration:none;}
 
-.schedule-jumbotron{
-	background: linear-gradient(135deg, #ff3019 0%,#ffb2b2 100%);
-}
+.footer-icons > a > i{color:rgb(208,209,210);}
+.footer-icons > a > i:hover {color:rgb(178,179,180);}
 
-.ident-jumbotron{
-	background: linear-gradient(135deg, #ffa84c 0%,#ffd4b2 100%);
-}
+a{color:#DC143C;}
+a:hover{color:#8B0000;}
+a:focus{color:#8B0000;}
 
-.program-jumbotron{
-background: linear-gradient(135deg, #dbdbdb 0%,#85b2d3 100%);
-}
+/* Jumbotron section/sekcija */
+.thumbnail-description{max-width:192px; text-align:left;}
+.testcard-jumbotron{background: linear-gradient(135deg, #42cbf4 0%,#6bea91 100%);}
+.schedule-jumbotron{background: linear-gradient(135deg, #ff3019 0%,#ffb2b2 100%);}
+.ident-jumbotron{background: linear-gradient(135deg, #ffa84c 0%,#ffd4b2 100%);}
+.program-jumbotron{background: linear-gradient(135deg, #dbdbdb 0%,#85b2d3 100%);}
+.general-jumbotron{background: linear-gradient(135deg, #f8ffe8 0%,#b7df2d 100%);}
+.broadcast-jumbotron{background: linear-gradient(135deg, #e4b2ff 0%,#66b6fc 100%);}
+.pp-jumbotron{background: linear-gradient(135deg, #5a547a 1%,#efa5d9 100%);}
+.jumbotron{background-color:#fafafa;}
+.clocks-jumbotron{background: linear-gradient(135deg, #7eeab4 0%,#d86e70 100%);}
+.about-jumbotron{background: linear-gradient(135deg, #c12626 0%,#50a4e5 100%);}
+.other-jumbotron{background: linear-gradient(135deg, #ff5659 0%,#faff0a 100%);}
+.logo-jumbotron{background: linear-gradient(135deg, #ad9ffc 0%,#1caf11 100%);}
+.home-jumbotron{background: linear-gradient(135deg, #d9dd7e 0%,#23cdfc 100%);}
+.category-jumbotron{background: linear-gradient(135deg, #d849d6 0%,#fff956 100%);}
+.foot-jumbotron{background-color:rgb(88,89,90);}
+.foot-jumbotron > h4{color:rgb(248,249,250);}
+.foot-jumbotron > h4 > a > i {color:rgb(208,209,210);}
+.foot-jumbotron > h4 > a > i:hover {color:rgb(178,179,180);}
 
-.general-jumbotron{
-background: linear-gradient(135deg, #f8ffe8 0%,#b7df2d 100%);
-}
-
-.broadcast-jumbotron{
-background: linear-gradient(135deg, #e4b2ff 0%,#66b6fc 100%);	
-}
-
-.pp-jumbotron{
-background: linear-gradient(135deg, #5a547a 1%,#efa5d9 100%);
+/* Other/Ostalo */
+.footer-icons{
+	padding-left:10px;
 }

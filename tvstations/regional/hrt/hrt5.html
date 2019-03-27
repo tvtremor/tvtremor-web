@@ -6,16 +6,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TVtremor</title>
-	<link href="/bin/bootstrap.min.css" rel="stylesheet">
-	<script src="/bin/jquery-3.3.1.min.js"></script>
-	<script src="/bin/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="SetJumbotron()">
+<body>
 	<header>
 		<nav class="navbar navbar-light navbar-tvtremor">
 			<div class="container-fluid">
@@ -23,64 +23,127 @@
 					<a class="navbar-brand" href="/index.html">TVtremor</a>
 				</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a  class="menu-item" href="/index.html">Početna</a></li>
-				<li><a class="menu-item" href="/about.html">O projektu</a></li>
-				<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-				<li><a class="menu-item" href="/radio.html">Radio</a></li>
-				<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-				<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>
-
+				
 				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#">Kontakt <span class="caret"></span></a>
+					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
+						<li><a class="menu-item" href="/index.html">Početna</a></li>
+						<li><a class="menu-item" href="/about.html">O projektu</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Sadržaj</li>
+						<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
+						<li><a class="menu-item" href="/radio.html">Radio stanice</a></li>
+						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Kontakt</li>
 						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
 						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Postavke</li>
+						<li><a class="menu-item" href="#">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						<li><a class="menu-item" href="#">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
 					</ul>
-				</li>
-			</ul>
+					</ul>
+				</li>	
+					</ul>
 			
 			</div>
 		</nav>
 	</header>
 
-		<div class="container center">
-		<div class="jumbotron RedNotify" name="warning-jumbotron">
-				<p style="transform:translateY(-25%);">&#9888; Štovani posjetitelji, stranica se ažurira u realnom vremenu pa su zbog toga mogući nedostaci i bugovi. Ukoliko pronađete neku grešku, možete ju prijaviti putem e-pošte.</p>
-			<button class="btn btn-success btn-lg close-jumbotron">Zatvori</button>
-		</div>
-		</div>
-	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Peti program HRT-a</h1>
-					</p></p>
-				<div class="row" style="margin-top:2em;">
-				<img class="HoverableLogo list-logo HRTlogo" src="/img/stations/hrt5.png">
-				</div>
-				<p></p>
-		</div>
+		<div class="jumbotron program-jumbotron">
+				<h1 style="text-align:center;">Peti program HRT-a (HRTint)</h1>
 	</div>
+</div>
 	
 	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron" style="background-color:#fafafa;">
-					<h1>Općenito</h1>
-					</p></p>
-				<div style="margin-top:2em;">
-				<p></p>
+			<div class="jumbotron">
+				<div class="row">
+				<span class="thumbnail img-responsive"><img src="/img/logos/htv5/htv5_2018.jpg"><h6>HRT5, 2018.</h6></span>
+				<span class="thumbnail img-responsive"><img src="/img/logos/htv5/htv5_2019.jpg"><h6>HRTint, 2019.</h6></span>
 				</div>
 		</div>
 	</div>
 	
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron" style="background-color:#fafafa;">
-				<h1>Test kartice</h1>
-							<i>Na frekvenciji HRT 5 primijećen je samo jedan testcard. Kada eksperimentalno emitiranje još nije krenulo, prikazivala se SMPTE testna slika s natpisom <b>HR-HRTV ZGRB</b>. Budući da nema nikakve naznake o broju kanala, taj testcard se svrstava pod općeniti HRT-ov. Možete ga naći na odjeljku za HRT.</i>							
-					</div>
+		<div class="jumbotron general-jumbotron">
+				<h1 style="text-align:center;">Općenito</h1>
+	</div>
+</div>		
+	
+	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+			<div class="jumbotron">
+				<p>HRT5 pokrenut je 1. siječnja 2018. godine i sadrži program namijenjen za iseljenike. Emitira se na satelitu te nije dostupan unutar Republike Hrvatske. HRT5 preimenovan je u HRTint početkom siječnja 2019. godine.</p>
 		</div>
+	</div>
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron testcard-jumbotron">
+				<h1 style="text-align:center;">Test kartice</h1>
+	</div>
+</div>			
+	
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+			<i>Na frekvenciji HRT 5 zamijećena je samo jedna testna kartica. Kada eksperimentalno emitiranje još nije krenulo, prikazivala se SMPTE testna slika s natpisom <b>HR-HRTV ZGRB</b>. Budući da nema nikakve naznake o broju kanala, ta testna kartica se svrstava pod općenitu HRT-ovu. Možete ju pronaći na odjeljku HRT-a.</i>							
+		</div>
+	</div>
 
 <div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-<p class="FooterText">TVtremor 2019. <a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></p>
+		<div class="jumbotron ident-jumbotron">
+				<h1 style="text-align:center;">Identi</h1>
+	</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
+					<h2>Slike</h2>
+						<div class="row">
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/idents/htv5/thumbs/htv5_prvi-thumb.jpg">
+								<h6 class="thumbnail-description">HTV5, 2018.</h6>
+							</div>
+							
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/idents/htv5/thumbs/htv5_drugi-thumb.jpg">
+								<h6 class="thumbnail-description">HTV5, 2018.</h6>
+							</div>
+						</div>
+	
+		</div>
+</div>
+
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron schedule-jumbotron">
+				<h1 style="text-align:center;">TV raspored</h1>
+	</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+		<div class="jumbotron">
+					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
+					<h2>Slike</h2>
+						<div class="row">
+							<div class="thumbnail img-responsive">
+								<img class="extendable-pic" src="/img/schedule/htv5/thumbs/htv5_2018-thumb.jpg">
+								<h6 class="thumbnail-description">HTV5, 2018.</h6>
+							</div>
+					</div>
+					<h2>Glazba</h2>
+					<p>2018. - sad - Autor nepoznat, najvjerojatnije HRT</p>
+	
+		</div>
+</div>
+
+<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+<div class="jumbotron foot-jumbotron">
+<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>	
+</div>
 
 </body>
 

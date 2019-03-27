@@ -76,6 +76,9 @@ a:focus,
 a:visited
 {text-decoration:none;}
 
+.footer-icons > a > i{color:rgb(208,209,210);}
+.footer-icons > a > i:hover {color:rgb(178,179,180);}
+
 a{color:#DC143C;}
 a:hover{color:#8B0000;}
 a:focus{color:#8B0000;}
@@ -93,8 +96,15 @@ a:focus{color:#8B0000;}
 .clocks-jumbotron{background: linear-gradient(135deg, #7eeab4 0%,#d86e70 100%);}
 .about-jumbotron{background: linear-gradient(135deg, #c12626 0%,#50a4e5 100%);}
 .other-jumbotron{background: linear-gradient(135deg, #ff5659 0%,#faff0a 100%);}
-.logo-jumbotron{background: linear-gradient(135deg, #ad9ffc 0%,#1caf11 100%)}
+.logo-jumbotron{background: linear-gradient(135deg, #ad9ffc 0%,#1caf11 100%);}
+.home-jumbotron{background: linear-gradient(135deg, #d9dd7e 0%,#23cdfc 100%);}
+.category-jumbotron{background: linear-gradient(135deg, #d849d6 0%,#fff956 100%);}
 .foot-jumbotron{background-color:rgb(88,89,90);}
 .foot-jumbotron > h4{color:rgb(248,249,250);}
 .foot-jumbotron > h4 > a > i {color:rgb(208,209,210);}
 .foot-jumbotron > h4 > a > i:hover {color:rgb(178,179,180);}
+
+/* Other/Ostalo */
+.footer-icons{
+	padding-left:10px;
+}

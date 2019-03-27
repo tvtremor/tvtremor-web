@@ -6,26 +6,45 @@ To do:
 Dark mode/Tamni mod
 
 */
+var siteVersion = "";
 
-/*function doPageWork(){
-	var modeSelection = localStorage.getItem("dark_mode");
+function doPageWork(){
+	getSiteVersion();
+	checkDarkMode();
+}
+
+function getSiteVersion(){	
+fetch('/version.txt')
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(text) {
+    document.getElementById("footer-version").innerHTML = text;
+  });
+}
+
+function checkDarkMode(){
+	/*var darkModeSelection = localStorage.getItem("dark_mode");
 	
 	if(modeSelection=="true"){
 		toggleDarkMode();
 	}
-	
+	else{
+		null;
+	}*/
+	null;
 }
 
 function toggleDarkMode(){
-	var modeSelection = localStorage.getItem("dark_mode");
+	/*var modeSelection = localStorage.getItem("dark_mode");
 	if(modeSelection=="false" || modeSelection=="" || modeSelection==undefined)
 		localStorage.setItem("dark_mode", "true");
 	else if (modeSelection=="true")
 		localStorage.setItem("dark_mode", "false");
 	location.reload();
-	yield;
+	*/
+	null;
 }
-*/
 
 $(document).on("click",".extendable-pic", function () {
    var clickedBtnSrc = $(this).attr('src');

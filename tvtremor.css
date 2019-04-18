@@ -108,3 +108,7 @@ a:focus{color:#8B0000;}
 .footer-icons{
 	padding-left:10px;
 }
+
+.logo{
+	min-height:20px;
+}

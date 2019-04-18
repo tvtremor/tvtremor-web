@@ -112,3 +112,12 @@ a:focus{color:#8B0000;}
 .logo{
 	min-height:20px;
 }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: transparent;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+	text-decoration: none;
+	background-color: transparent;
+}

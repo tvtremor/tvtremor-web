@@ -12,10 +12,12 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
+	<script src="https://unpkg.com/popper.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
 <body onload="doPageWork()">
+<div class="site-wrap">
 	<header>
 		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
@@ -41,7 +43,6 @@
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
 						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Tamni/svijetli način <i class="fa fa-sun" aria-hidden="true"></i><i class="fas fa-moon" aria-hidden="true"></i></a></li>
-						
 					</ul>
 				</div>
 			</ul>
@@ -50,27 +51,30 @@
 	</header>
 
 <div class="container col-sm-8 center">
-		<div class="jumbotron program-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">Prvi program HRT-a</h1>
 	</div>
+</div>
+
+<div class="container col-sm-8 center">
+<span><b class="pojedinosti_ne">HD</b> <b class="pojedinosti">SD</b> <b class="pojedinosti_ne">4:3</b> <b class="pojedinosti">16:9</b> <b class="pojedinosti">DVB-T</b> <b class="pojedinosti_ne">ATV</b> <b class="pojedinosti">24h</b> <b class="pojedinosti_ne">&lt;24h</b> <a onclick="handleHelp(0)" href="#"><i class="fa fa-question-circle"></i></a></span>
 </div>
 	
 	<div class="container col-sm-8 center">
 			<div class="jumbotron content-jumbotron">
 				<div class="row">
-					<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt1/htv1_90s.png"><h6>HRT1, 1997. - 1999.</h6></span>
-					<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt1/hrt1_1999_prozirni.jpg"><h6>HRT1, 1999. i 2000.</h6></span>
-					<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt1/htv1_old.png"><h6>HRT1, 2000. - 2008.</h6></span>
-					<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt1/htv1_predtv.png"><h6>HRT1, 2008. - 2011.</h6></span>
-					<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt1/hrt1_2016.png"><h6>HRT1, 2016. Ubrzo povučen.</h6></span>
-					<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt1/hrt1_trenutni.png"><h6>HRT1, trenutni logo.</h6></span>
+					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/htv1_90s.png"><h6 class="station-logo-description">HRT1, 1997. - 1999.</h6></span>
+					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/hrt1_1999_prozirni.jpg"><h6 class="station-logo-description">HRT1, 1999. i 2000.</h6></span>
+					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/htv1_old.png"><h6 class="station-logo-description">HRT1, 2000. - 2008.</h6></span>
+					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/htv1_predtv.png"><h6 class="station-logo-description">HRT1, 2008. - 2011.</h6></span>
+					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/hrt1_2016.png"><h6 class="station-logo-description">HRT1, 2016. Ubrzo povučen.</h6></span>
+					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/hrt1_trenutni.png"><h6 class="station-logo-description">HRT1, trenutni logo.</h6></span>
 				</div>
-			<p></p>
 		</div>
 	</div>
 
 <div class="container col-sm-8 center">
-		<div class="jumbotron general-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">Općenito</h1>
 	</div>
 </div>
@@ -84,7 +88,7 @@
 	</div>
 	
 <div class="container col-sm-8 center">
-		<div class="jumbotron broadcast-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">Emisije</h1>
 	</div>
 </div>	
@@ -99,7 +103,7 @@
 	</div>
 
 <div class="container col-sm-8 center">
-		<div class="jumbotron testcard-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">Test kartice</h1>
 	</div>
 </div>
@@ -132,7 +136,7 @@
 		</div>
 
 <div class="container col-sm-8 center">
-		<div class="jumbotron ident-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">Identi</h1>
 	</div>
 </div>
@@ -248,7 +252,7 @@
 </div>
 
 <div class="container col-sm-8 center">
-		<div class="jumbotron schedule-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">TV raspored</h1>
 	</div>
 </div>
@@ -328,7 +332,7 @@
 		</div>
 
 <div class="container col-sm-8 center">
-		<div class="jumbotron pp-jumbotron">
+		<div class="jumbotron tv-channel-jumbotron">
 				<h1 style="text-align:center;">PP (promidžbeni program)</h1>
 	</div>
 </div>
@@ -436,8 +440,25 @@
 
 <div class="container col-sm-8 center">
 <div class="jumbotron foot-jumbotron">
-<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
-</div>	
+<h4>TVtremor 2019. <em id="footer-version">2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
+</div>
+</div>
+</div>
+	
+<div class="help-wrapper" id="help-wrap-element">
+
+<div class="alert alert-info">
+<strong class="help-title">Skraćenice</strong><button type="button" class="btn btn-danger help-btn-close" onclick="handleHelp(1)" id="help-close-button">X</button>
+<br><br>
+<p class="help-item"><b class="help-item">HD</b> označava da se program emitira u 1280x720 rezoluciji ili više.</p>
+<p class="help-item"><b class="help-item">SD</b> označava da se program emitira u 720x576.</p>
+<p class="help-item"><b class="help-item">4:3</b> označava da se program emitira u omjeru 4:3.</p>
+<p class="help-item"><b class="help-item">16:9</b> označava da se program emitira u omjeru 16:9 (široka razlučivost). To se ne odnosi i na emitirani sadržaj, koji može biti 4:3 omjera pa se emitira letterbox tehnikom.</p>
+<p class="help-item"><b class="help-item">DVB-T</b> označava da se program emitira pomoću digitalnog kodeka koristeći DVB-T ili DVB-T2 standard.</p>
+<p class="help-item"><b class="help-item">ATV</b> označava da se program emitira pomoću zastarjele analogne tehnologije.</p>
+<p class="help-item"><b class="help-item">24h</b> označava da se program emitira 24 sata dnevno.</p>
+<p class="help-item"><b class="help-item">&lt;24h</b> označava da se program ne emitira 24 sata dnevno, tj. emitiranje se prekida u periodu od 1 min. ili više.</p>
+</div>
 </div>
 
 </body>

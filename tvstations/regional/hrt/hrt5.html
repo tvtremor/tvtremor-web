@@ -5,10 +5,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TVtremor</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>TVtremor - HRT Int.</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
@@ -17,104 +17,102 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-light navbar-tvtremor">
+		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="/index.html"><img src="/img/logo.svg" onerror="this.src='logo.png'" class="logo" alt="TVtremor logo"></a>
-				</div>
-			<ul class="nav navbar-nav navbar-right">
-				
-				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+					<a class="navbar-brand" href="/index.html">TVtremor</a>
+					</div>
+			<ul class="navbar-nav">
+				<div class="dropdown dropleft">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
-						<li><a class="menu-item" href="/index.html">Početna</a></li>
-						<li><a class="menu-item" href="/about.html">O projektu</a></li>
+						<li><a class="dropdown-item" href="index.html">Početna</a></li>
+						<li><a class="dropdown-item" href="/about.html">O projektu</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Sadržaj</li>
-						<li class="active"><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-						<li><a class="menu-item" href="/radio.html">Radio stanice</a></li>
-						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
+						<li class="active"><a class="dropdown-item" href="/tvstations.html">TV stanice</a></li>
+						<li><a class="dropdown-item" href="/radio.html">Radio stanice</a></li>
+						<li><a class="dropdown-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Kontakt</li>
-						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
-						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li><a class="dropdown-item" href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
+						<li><a class="dropdown-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
-						<li><a class="menu-item" href="#">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
-						<li><a class="menu-item" href="#">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(1)">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(0)">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						
 					</ul>
-					</ul>
-				</li>	
-					</ul>
-			
+				</div>
+			</ul>
 			</div>
 		</nav>
 	</header>
 
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron program-jumbotron">
-				<h1 style="text-align:center;">Peti program HRT-a (HRT Int.)</h1>
+	<div class="container col-sm-8 center">
+		<div class="jumbotron tv-channel-jumbotron">
+				<h1 class="jumbotron-title">Peti program HRT-a (HRT Int.)</h1>
 	</div>
 </div>
 	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron">
-				<div class="row">
-				<span class="thumbnail img-responsive"><img src="/img/logos/htv5/htv5_2018.jpg"><h6>HRT5, 2018.</h6></span>
-				<span class="thumbnail img-responsive"><img src="/img/logos/htv5/htv5_2019.jpg"><h6>HRT Int., 2019.</h6></span>
+	<div class="container col-sm-8 center">
+			<div class="jumbotron content-jumbotron">
+				<div class="row justify-content-center">
+				<span class="thumbnail img-thumbnail"><img src="/img/logos/htv5/htv5_2018.jpg"><h6>HRT5, 2018.</h6></span>
+				<span class="thumbnail img-thumbnail"><img src="/img/logos/htv5/htv5_2019.jpg"><h6>HRT Int., 2019.</h6></span>
 				</div>
 		</div>
 	</div>
 	
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron general-jumbotron">
-				<h1 style="text-align:center;">Općenito</h1>
+<div class="container col-sm-8 center">
+		<div class="jumbotron tv-channel-jumbotron">
+				<h1 class="jumbotron-title">Općenito</h1>
 	</div>
 </div>		
 	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron">
+	<div class="container col-sm-8 center">
+			<div class="jumbotron content-jumbotron">
 				<p>HRT5 pokrenut je 1. siječnja 2018. godine i sadrži program namijenjen za iseljenike. Emitira se na satelitu te nije dostupan unutar Republike Hrvatske. HRT5 preimenovan je u HRT Int. početkom siječnja 2019. godine. HRTint emitira se 24 sata dnevno po shemi 8x3. To znači da se isti program u trajanju od osam sati emitira tri puta dnevno, i to u 02:00, 10:00 te 18:00.</p>
 		</div>
 	</div>
 	
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron testcard-jumbotron">
-				<h1 style="text-align:center;">Test kartice</h1>
+<div class="container col-sm-8 center">
+		<div class="jumbotron tv-channel-jumbotron">
+				<h1 class="jumbotron-title">Test kartice</h1>
 	</div>
 </div>			
 	
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron">
-			<i>Na frekvenciji HRT 5 zamijećena je samo jedna testna kartica. Kada eksperimentalno emitiranje još nije krenulo, prikazivala se SMPTE testna slika s natpisom <b>HR-HRTV ZGRB</b>. Budući da nema nikakve naznake o broju kanala, ta testna kartica se svrstava pod općenitu HRT-ovu. Možete ju pronaći na odjeljku HRT-a.</i>							
+<div class="container col-sm-8 center">
+		<div class="jumbotron content-jumbotron">
+			<i class="napomena-n">Na frekvenciji HRT 5 zamijećena je samo jedna testna kartica. Kada eksperimentalno emitiranje još nije krenulo, prikazivala se SMPTE testna slika s natpisom <b>HR-HRTV ZGRB</b>. Budući da nema nikakve naznake o broju kanala, ta testna kartica se svrstava pod općenitu HRT-ovu. Možete ju pronaći na odjeljku HRT-a.</i>							
 		</div>
 	</div>
 
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron ident-jumbotron">
-				<h1 style="text-align:center;">Identi</h1>
+<div class="container col-sm-8 center">
+		<div class="jumbotron tv-channel-jumbotron">
+				<h1 class="jumbotron-title">Identi</h1>
 	</div>
 </div>
 
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron">
+<div class="container col-sm-8 center">
+		<div class="jumbotron content-jumbotron">
 					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
 					<h2>Slike</h2>
-						<div class="row">
-							<div class="thumbnail img-responsive">
+						<div class="row justify-content-center">
+							<div class="thumbnail img-thumbnail">
 								<img class="extendable-pic" src="/img/idents/htv5/thumbs/htv5_prvi-thumb.jpg">
-								<h6 class="thumbnail-description">HTV5, 2018.</h6>
+								<p class="thumbnail-description">HTV5, 2018.</h6>
 							</div>
 							
-							<div class="thumbnail img-responsive">
+							<div class="thumbnail img-thumbnail">
 								<img class="extendable-pic" src="/img/idents/htv5/thumbs/htv5_drugi-thumb.jpg">
-								<h6 class="thumbnail-description">HTV5, 2018.</h6>
+								<p class="thumbnail-description">HTV5, 2018.</h6>
 							</div>
 							
-							<div class="thumbnail img-responsive">
+							<div class="thumbnail img-thumbnail">
 								<img class="extendable-pic" src="/img/idents/htv5/thumbs/htv5_2019-thumb.png">
-								<h6 class="thumbnail-description">HRT Int., 2019.</h6>
+								<p class="thumbnail-description">HRT Int., 2019.</h6>
 							</div>
 						</div>
 	
@@ -122,20 +120,20 @@
 </div>
 
 
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron schedule-jumbotron">
-				<h1 style="text-align:center;">TV raspored</h1>
+<div class="container col-sm-8 center">
+		<div class="jumbotron tv-channel-jumbotron">
+				<h1 class="jumbotron-title">TV raspored</h1>
 	</div>
 </div>
 
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-		<div class="jumbotron">
+<div class="container col-sm-8 center">
+		<div class="jumbotron content-jumbotron">
 					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
 					<h2>Slike</h2>
-						<div class="row">
-							<div class="thumbnail img-responsive">
+						<div class="row justify-content-center">
+							<div class="thumbnail img-thumbnail">
 								<img class="extendable-pic" src="/img/schedule/htv5/thumbs/htv5_2018-thumb.jpg">
-								<h6 class="thumbnail-description">HTV5, 2018.</h6>
+								<p class="thumbnail-description">HTV5, 2018.</h6>
 							</div>
 					</div>
 					<h2>Glazba</h2>
@@ -144,11 +142,33 @@
 		</div>
 </div>
 
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+<div class="container col-sm-8 center">
 <div class="jumbotron foot-jumbotron">
-<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
+<h4>TVtremor 2019. <em id="footer-version">2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>	
 </div>
+
+<div class="help-wrapper" id="help-wrap-element">
+
+<div class="alert alert-info">
+<strong class="help-title">Skraćenice</strong><button type="button" class="btn btn-danger help-btn-close" onclick="handleHelp(1)" id="help-close-button">X</button>
+<br><br>
+<p class="help-item"><b class="help-item">HD</b> označava da se program emitira u 1280x720 rezoluciji ili više.</p>
+<p class="help-item"><b class="help-item">SD</b> označava da se program emitira u 720x576.</p>
+<p class="help-item"><b class="help-item">4:3</b> označava da se program emitira u omjeru 4:3.</p>
+<p class="help-item"><b class="help-item">16:9</b> označava da se program emitira u omjeru 16:9 (široka razlučivost). To se ne odnosi i na emitirani sadržaj, koji može biti 4:3 omjera pa se emitira letterbox tehnikom.</p>
+<p class="help-item"><b class="help-item">DVB-T</b> označava da se program emitira pomoću digitalnog kodeka koristeći DVB-T ili DVB-T2 standard.</p>
+<p class="help-item"><b class="help-item">ATV</b> označava da se program emitira pomoću zastarjele analogne tehnologije.</p>
+<p class="help-item"><b class="help-item">24h</b> označava da se program emitira 24 sata dnevno.</p>
+<p class="help-item"><b class="help-item">&lt;24h</b> označava da se program ne emitira 24 sata dnevno, tj. emitiranje se prekida u periodu od 1 min. ili više.</p>
+</div>
+</div>
+
+<div class="image-viewer" id="image-viewer-div">
+<button type="button" class="btn btn-danger image-btn-close" onclick="handleImages(1)" id="image-close-button">X</button>
+<img class="image-frame" id="image-frame" src="" alt="Okvir slike">
+</div>
+
 
 </body>
 

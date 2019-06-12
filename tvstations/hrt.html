@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="doPageWork()">
+<body>
 	<header>
 		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
@@ -40,7 +40,8 @@
 						<li><a class="dropdown-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
-						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Tamni/svijetli način <i class="fa fa-sun" aria-hidden="true"></i><i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(1)">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(0)">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
 						
 					</ul>
 				</div>
@@ -51,13 +52,13 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Hrvatska radiotelevizija (HRT)</h1>
+				<h1 class="jumbotron-title">Hrvatska radiotelevizija (HRT)</h1>
 	</div>
 </div>	
 
 	<div class="container col-sm-8 center">
 			<div class="jumbotron content-jumbotron">
-				<div class="row">
+				<div class="row justify-content-center">
 				<a href="regional/hrt/hrt1.html"><img class="hoverable-logo" src="/img/stations/hrt1.png"></a>
 				<a href="regional/hrt/hrt2.html"><img class="hoverable-logo" src="/img/stations/hrt2.png"></a>
 				<a href="regional/hrt/hrt3.html"><img class="hoverable-logo" src="/img/stations/hrt3.png"></a>
@@ -69,110 +70,110 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Logotipi</h1>
+				<h1 class="jumbotron-title">Logotipi</h1>
 	</div>
 </div>	
 
 	<div class="container col-sm-8 center">
 			<div class="jumbotron content-jumbotron">
-				<div class="row">
+				<div class="row justify-content-center">
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/tvz_bijeli.jpg">
+						<img class="station-logo" src="/img/logos/hrt/tvz_bijeli.jpg">
 						<p class="thumbnail-description">TVZ, bijeli.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/tvz_plavi_obrub.jpg">
+						<img class="station-logo" src="/img/logos/hrt/tvz_plavi_obrub.jpg">
 						<p class="thumbnail-description">TVZ, crni s plavim obrubom.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/tvz_zuti_1.jpg">
+						<img class="station-logo" src="/img/logos/hrt/tvz_zuti_1.jpg">
 						<p class="thumbnail-description">TVZ, žuti s malim slovima.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/tvz_zuti_2.jpg">
+						<img class="station-logo" src="/img/logos/hrt/tvz_zuti_2.jpg">
 						<p class="thumbnail-description">TVZ, žuti s velikim slovima.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/tvz_plavi.png">
+						<img class="station-logo" src="/img/logos/hrt/tvz_plavi.png">
 						<p class="thumbnail-description">TVZ, plavi.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/tvz_crnozuti.png">
+						<img class="station-logo" src="/img/logos/hrt/tvz_crnozuti.png">
 						<p class="thumbnail-description">TVZ, crni sa žutom sjenom.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/lipanj_1990.png">
+						<img class="station-logo" src="/img/logos/hrt/lipanj_1990.png">
 						<p class="thumbnail-description">HTV, lipanj 1990.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/listopad_1990.png">
+						<img class="station-logo" src="/img/logos/hrt/listopad_1990.png">
 						<p class="thumbnail-description">HTV, listopad 1990.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1990.png">
+						<img class="station-logo" src="/img/logos/hrt/1990.png">
 						<p class="thumbnail-description">HTV, 1990.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1991.png">
+						<img class="station-logo" src="/img/logos/hrt/1991.png">
 						<p class="thumbnail-description">HTV, 1991.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/srpanj_1991.png">
+						<img class="station-logo" src="/img/logos/hrt/srpanj_1991.png">
 						<p class="thumbnail-description">HTV, srpanj 1991.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1993.png">
+						<img class="station-logo" src="/img/logos/hrt/1993.png">
 						<p class="thumbnail-description">HTV, 1993.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1993_1994.png">
+						<img class="station-logo" src="/img/logos/hrt/1993_1994.png">
 						<p class="thumbnail-description">HRT, 1994.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1994.png">
+						<img class="station-logo" src="/img/logos/hrt/1994.png">
 						<p class="thumbnail-description">HRT, 1994.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1995.png">
+						<img class="station-logo" src="/img/logos/hrt/1995.png">
 						<p class="thumbnail-description">HRT, 1995.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/crni-prozirni-hrt.png">
+						<img class="station-logo" src="/img/logos/hrt/crni-prozirni-hrt.png">
 						<p class="thumbnail-description">HRT, 1995.(?)</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/1996.png">
+						<img class="station-logo" src="/img/logos/hrt/1996.png">
 						<p class="thumbnail-description">HRT, 1996.</h6>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/htv_osijek.png">
+						<img class="station-logo" src="/img/logos/hrt/htv_osijek.png">
 						<p class="thumbnail-description">HTV studio Osijek, 1991.</h6>
 				</div>
 			
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/2000_vijesti.png">
+						<img class="station-logo" src="/img/logos/hrt/2000_vijesti.png">
 						<p class="thumbnail-description">HRT, vijesti 2000.</h6>
 				</div>
 			
 				<div class="thumbnail img-thumbnail">
-						<img src="/img/logos/hrt/obicni_analog.png">
+						<img class="station-logo" src="/img/logos/hrt/obicni_analog.png">
 						<p class="thumbnail-description">HRT, vijesti 2001. - 2008.</h6>
 				</div>
 			
@@ -182,7 +183,7 @@
 		
 	<div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Općenito</h1>
+				<h1 class="jumbotron-title">Općenito</h1>
 		</div>
 	</div>
 	
@@ -196,7 +197,7 @@
 	
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Test kartice</h1>
+				<h1 class="jumbotron-title">Test kartice</h1>
 	</div>
 </div>
 
@@ -229,7 +230,7 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Satovi</h1>
+				<h1 class="jumbotron-title">Satovi</h1>
 	</div>
 </div>
 		
@@ -307,7 +308,7 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Ostalo</h1>
+				<h1 class="jumbotron-title">Ostalo</h1>
 	</div>
 </div>
 
@@ -356,6 +357,28 @@
 <h4>TVtremor 2019. <em id="footer-version">2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>	
 </div>	
+
+<div class="help-wrapper" id="help-wrap-element">
+
+<div class="alert alert-info">
+<strong class="help-title">Skraćenice</strong><button type="button" class="btn btn-danger help-btn-close" onclick="handleHelp(1)" id="help-close-button">X</button>
+<br><br>
+<p class="help-item"><b class="help-item">HD</b> označava da se program emitira u 1280x720 rezoluciji ili više.</p>
+<p class="help-item"><b class="help-item">SD</b> označava da se program emitira u 720x576.</p>
+<p class="help-item"><b class="help-item">4:3</b> označava da se program emitira u omjeru 4:3.</p>
+<p class="help-item"><b class="help-item">16:9</b> označava da se program emitira u omjeru 16:9 (široka razlučivost). To se ne odnosi i na emitirani sadržaj, koji može biti 4:3 omjera pa se emitira letterbox tehnikom.</p>
+<p class="help-item"><b class="help-item">DVB-T</b> označava da se program emitira pomoću digitalnog kodeka koristeći DVB-T ili DVB-T2 standard.</p>
+<p class="help-item"><b class="help-item">ATV</b> označava da se program emitira pomoću zastarjele analogne tehnologije.</p>
+<p class="help-item"><b class="help-item">24h</b> označava da se program emitira 24 sata dnevno.</p>
+<p class="help-item"><b class="help-item">&lt;24h</b> označava da se program ne emitira 24 sata dnevno, tj. emitiranje se prekida u periodu od 1 min. ili više.</p>
+</div>
+</div>
+
+<div class="image-viewer" id="image-viewer-div">
+<button type="button" class="btn btn-danger image-btn-close" onclick="handleImages(1)" id="image-close-button">X</button>
+<img class="image-frame" id="image-frame" src="" alt="Okvir slike">
+</div>
+
 
 </body>
 

@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="doPageWork()">
+<body>
 	<header>
 		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
@@ -40,7 +40,8 @@
 						<li><a class="dropdown-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
-						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Tamni/svijetli način <i class="fa fa-sun" aria-hidden="true"></i><i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(1)">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(0)">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
 						
 					</ul>
 				</div>
@@ -51,7 +52,7 @@
 	
 	<div class="container col-sm-8 center">
 		<div class="jumbotron about-jumbotron">
-				<h1 style="text-align:center;">Kada i zašto je ova stranica nastala?</h1>
+				<h1 class="jumbotron-title">Kada i zašto je ova stranica nastala?</h1>
 	</div>
 </div>
 	

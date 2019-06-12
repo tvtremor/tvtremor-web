@@ -16,7 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="doPageWork()">
+<body>
 <div class="site-wrap">
 	<header>
 		<nav class="navbar navbar-expand bg-light">
@@ -42,7 +42,8 @@
 						<li><a class="dropdown-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
-						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Tamni/svijetli način <i class="fa fa-sun" aria-hidden="true"></i><i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(1)">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(0)">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</ul>
@@ -52,7 +53,7 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Prvi program HRT-a</h1>
+				<h1 class="jumbotron-title">Prvi program HRT-a</h1>
 	</div>
 </div>
 
@@ -62,7 +63,7 @@
 	
 	<div class="container col-sm-8 center">
 			<div class="jumbotron content-jumbotron">
-				<div class="row">
+				<div class="row justify-content-center">
 					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/htv1_90s.png"><h6 class="station-logo-description">HRT1, 1997. - 1999.</h6></span>
 					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/hrt1_1999_prozirni.jpg"><h6 class="station-logo-description">HRT1, 1999. i 2000.</h6></span>
 					<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt1/htv1_old.png"><h6 class="station-logo-description">HRT1, 2000. - 2008.</h6></span>
@@ -75,7 +76,7 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Općenito</h1>
+				<h1 class="jumbotron-title">Općenito</h1>
 	</div>
 </div>
 	
@@ -89,7 +90,7 @@
 	
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Emisije</h1>
+				<h1 class="jumbotron-title">Emisije</h1>
 	</div>
 </div>	
 
@@ -104,13 +105,13 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Test kartice</h1>
+				<h1 class="jumbotron-title">Test kartice</h1>
 	</div>
 </div>
 	
 <div class="container col-sm-8 center">
 		<div class="jumbotron content-jumbotron">
-					<div class="row">
+					<div class="row justify-content-center">
 						<div class="thumbnail img-thumbnail">
 							<img class="extendable-pic" src="/img/testcard/thumbs/jrt_zgrb1-thumb.jpg">
 							<p class="thumbnail-description">JRT Zagreb 1, osamdesete.</h6>
@@ -131,13 +132,13 @@
 							<p class="thumbnail-description">HRT1, 1994. - 2010.</h6>
 						</div>
 					</div>
-							<i>Na test karticama u doba JRT TVZ-a, a i HRT-a, u pozadini se često čuo Radio Zagreb (ili današnji Hrvatski radio). To se uglavnom dešavalo tik pred početak programa.</i>							
+							<i class="napomena-n">Na test karticama u doba JRT TVZ-a, a i HRT-a, u pozadini se često čuo Radio Zagreb (ili današnji Hrvatski radio). To se uglavnom dešavalo tik pred početak programa.</i>							
 					</div>
 		</div>
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">Identi</h1>
+				<h1 class="jumbotron-title">Identi</h1>
 	</div>
 </div>
 
@@ -145,7 +146,7 @@
 		<div class="jumbotron content-jumbotron">
 					<p>Ident se pokazuje nakon završetka nekog programa ili pri kraju emitiranja.</p>
 					<h2>Slike</h2>
-						<div class="row">
+						<div class="row justify-content-center">
 							<div class="thumbnail img-thumbnail">
 								<img class="extendable-pic" src="/img/idents/htv1/thumbs/htv1_1993-thumb.jpg">
 								<p class="thumbnail-description">HTV1, 1993.</h6>
@@ -253,7 +254,7 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">TV raspored</h1>
+				<h1 class="jumbotron-title">TV raspored</h1>
 	</div>
 </div>
 
@@ -262,7 +263,7 @@
 		<div class="jumbotron content-jumbotron">
 					<p>Prije prelaska na digitalno emitiranje, na početku, krajem ili usred emitiranja puštao se TV raspored, koji je sadržao slijedeći program ili program za današnji dan (budući da je noćni TV raspored puštan u ranim jutarnjim satima).</p>
 						<h2>Slike</h2>
-						<div class="row">
+						<div class="row justify-content-center">
 						<div class="thumbnail img-thumbnail">
 						<img class="extendable-pic" src="/img/schedule/htv1/thumbs/htv1_1990-thumb.jpg">
 						<p class="thumbnail-description">HTV1, 1990. godina. Sami počeci HTV-a.</h6>
@@ -333,7 +334,7 @@
 
 <div class="container col-sm-8 center">
 		<div class="jumbotron tv-channel-jumbotron">
-				<h1 style="text-align:center;">PP (promidžbeni program)</h1>
+				<h1 class="jumbotron-title">PP (promidžbeni program)</h1>
 	</div>
 </div>
 
@@ -342,7 +343,7 @@
 			
 			<p>PP ili promidžbeni program označava početak i završetak reklamnog bloka.</p>
 		
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="thumbnail img-thumbnail">
 					<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_1990-thumb.jpg">
 					<p class="thumbnail-description">HTV1, 1990.</h6>
@@ -410,27 +411,27 @@
 				
 				<div class="thumbnail img-thumbnail">
 					<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2006_voda-thumb.jpg">
-					<p class="thumbnail-description">HTV1, 2006. - 2008. Motiv s čašom vode, kraj/kratka verzija.</h6>
+					<p class="thumbnail-description">HTV1, 2006. - 2008. Motiv s čašom vode, kraj/kratka verzija.</p>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
 					<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2008_privremeni-thumb.jpg">
-					<p class="thumbnail-description">HTV1, 2008. Privremeni PP tijekom primjene novog dizajna 2008.</h6>
+					<p class="thumbnail-description">HTV1, 2008. Privremeni PP tijekom primjene novog dizajna 2008.</p>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
 					<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2008_oblaci-thumb.jpg">
-					<p class="thumbnail-description">HTV1, 2008. - 2010. Oblaci.</h6>
+					<p class="thumbnail-description">HTV1, 2008. - 2010. Oblaci.</p>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
 					<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2008_more-thumb.jpg">
-					<p class="thumbnail-description">HTV1, 2008. - 2010. More.</h6>
+					<p class="thumbnail-description">HTV1, 2008. - 2010. More.</p>
 				</div>
 				
 				<div class="thumbnail img-thumbnail">
 					<img class="extendable-pic" src="/img/pp/htv/thumbs/htv1_pp_2012-thumb.jpg">
-					<p class="thumbnail-description">HTV1, 2012.</h6>
+					<p class="thumbnail-description">HTV1, 2012.</p>
 				</div>
 				
 			</div>
@@ -459,6 +460,11 @@
 <p class="help-item"><b class="help-item">24h</b> označava da se program emitira 24 sata dnevno.</p>
 <p class="help-item"><b class="help-item">&lt;24h</b> označava da se program ne emitira 24 sata dnevno, tj. emitiranje se prekida u periodu od 1 min. ili više.</p>
 </div>
+</div>
+
+<div class="image-viewer" id="image-viewer-div">
+<button type="button" class="btn btn-danger image-btn-close" onclick="handleImages(1)" id="image-close-button">X</button>
+<img class="image-frame" id="image-frame" src="" alt="Okvir slike">
 </div>
 
 </body>

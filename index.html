@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
-<body onload="doPageWork()">
+<body>
 	<header>
 		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
@@ -40,7 +40,8 @@
 						<li><a class="dropdown-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
-						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode()">Tamni/svijetli način <i class="fa fa-sun" aria-hidden="true"></i><i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(1)">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(0)">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</ul>
@@ -50,7 +51,7 @@
 	
 	<div class="container col-sm-8 center">
 			<div class="jumbotron home-jumbotron">
-			<h1 style="text-align:center;">Sve što ste ikada htjeli znati o TV-u.</h1>
+			<h1 class="jumbotron-title">Sve što ste ikada htjeli znati o TV-u.</h1>
 			</div>
 			
 			<div class="jumbotron content-jumbotron">
@@ -59,7 +60,7 @@
 			</div>
 			
 			<div class="jumbotron home-jumbotron">
-			<h1 style="text-align:center;">Prijedlozi, žalbe i pohvale</h1>
+			<h1 class="jumbotron-title">Prijedlozi, žalbe i pohvale</h1>
 			</div>
 			
 			<div class="jumbotron content-jumbotron">
@@ -67,7 +68,7 @@
 			</div>
 			
 			<div class="jumbotron home-jumbotron">
-			<h1 style="text-align:center;">Pristup RTV sadržaju</h1>
+			<h1 class="jumbotron-title">Pristup RTV sadržaju</h1>
 			</div>
 			
 			<div class="jumbotron content-jumbotron">

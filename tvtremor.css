@@ -9,7 +9,13 @@ body{width:100%;height:100%;background: rgb(240,240,240);}
 .pojedinosti{color:rgb(0,0,0);}
 .pojedinosti_ne{color:rgb(127,127,127);}
 /* Images/Slike */
-.hoverable-logo{width:auto;height:32px;filter:grayscale(100%);margin-left:2em;margin-top:1.5em;}
+.hoverable-logo{width:auto;height:32px;filter:grayscale(100%);}
+.hoverable-logo:not(.first-hlogo){padding-left:1.5em;}
+@media only screen and (max-width:480px){
+	.hoverable-logo{
+	margin-top:1.5em;
+	}
+}
 .hoverable-logo:hover{filter:grayscale(0%);}
 .extendable-pic{width:240px;height:auto;cursor:pointer;}
 /* Bootstrap elements/elementi */
@@ -45,16 +51,16 @@ a:focus{color:#8B0000;}
 .footer-icons{padding-left:10px;}
 .navbar-brand{font-weight:bold;}
 .row{margin-left:10px;margin-right:10px;}
-.img-thumbnail{border:0px;background-color:rgb(233,236,239);min-width:96px;}
-.station-logo{height:32px;width:auto;text-align:center;}
+.img-thumbnail{border:0px;background-color:rgb(233,236,239);min-width:96px;min-height:96px;}
+.station-logo{height:32px;width:auto;}
 .station-logo-description{font-size:10pt;width:96px;}
 
-.help-wrapper{
+.help-wrapper, .image-viewer{
 position:fixed;
 display:none;
 width:100%;
 height:100%;
-background-color:rgba(0,0,0,0.75);
+background-color:rgba(0,0,0,0.9);
 top:0;left:0;right:0;bottom:0;
 z-index:15;
 overflow:auto;
@@ -76,7 +82,7 @@ overflow:auto;
 	background:inherit;
 }
 
-.help-btn-close{
+.help-btn-close, .image-btn-close{
 	position:absolute;
 	right:0.5em;
 	top:0.5em;
@@ -84,4 +90,29 @@ overflow:auto;
 
 .help-title{
 	font-size:20pt;
+}
+
+.jumbotron:not(.content-jumbotron){
+	text-align:center;
+}
+
+.alert{
+	background-color:rgba(29,41,81,1.0);
+	border-color:rgb(15,82,186);
+}
+
+.help-item, .help-title{
+	color:rgb(216,216,216);
+}
+
+.image-frame{
+	max-height:100%;
+	max-width:100%;
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	border: 1px solid #d8d8d8;
 }

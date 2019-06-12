@@ -54,65 +54,15 @@ a:focus{color:#8B0000;}
 .img-thumbnail{border:0px;background-color:rgb(233,236,239);min-width:96px;min-height:96px;}
 .station-logo{height:32px;width:auto;}
 .station-logo-description{font-size:10pt;width:96px;}
-
-.help-wrapper, .image-viewer{
-position:fixed;
-display:none;
-width:100%;
-height:100%;
-background-color:rgba(0,0,0,0.9);
-top:0;left:0;right:0;bottom:0;
-z-index:15;
-overflow:auto;
-}
-
-.alert-info{
-	position:absolute;
-	top:25%;
-	left:12.5%;
-	width:75%;
-	height:auto;
-	border-radius:0px;
-	
-}
-
-.site-wrap{
-	width:100%;
-	z-index:10;
-	background:inherit;
-}
-
-.help-btn-close, .image-btn-close{
-	position:absolute;
-	right:0.5em;
-	top:0.5em;
-}
-
-.help-title{
-	font-size:20pt;
-}
-
-.jumbotron:not(.content-jumbotron){
-	text-align:center;
-}
-
-.alert{
-	background-color:rgba(29,41,81,1.0);
-	border-color:rgb(15,82,186);
-}
-
-.help-item, .help-title{
-	color:rgb(216,216,216);
-}
-
-.image-frame{
-	max-height:100%;
-	max-width:100%;
-	position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-	border: 1px solid #d8d8d8;
-}
+.help-wrapper, .image-viewer{position:fixed;display:none;width:100%;height:100%;background-color:rgba(0,0,0,0.9);top:0;left:0;right:0;bottom:0;z-index:15;overflow:auto;}
+.alert-info{position:absolute;top:25%;left:12.5%;width:75%;height:auto;border-radius:0px;}
+.site-wrap{width:100%;z-index:10;background:inherit;}
+.help-btn-close, .image-btn-close{position:absolute;right:0.5em;top:0.5em;}
+.help-title{font-size:20pt;}
+.jumbotron:not(.content-jumbotron){text-align:center;}
+.alert{background-color:rgba(29,41,81,1.0);border-color:rgb(15,82,186);}
+.help-item, .help-title{color:rgb(216,216,216);}
+.help-item{font-size:11pt;}
+.image-frame{max-height:100%;max-width:100%;position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;border: 1px solid #d8d8d8;}
+header{margin-bottom:2em;}
+.foot-jumbotron > *{font-size:12pt;}

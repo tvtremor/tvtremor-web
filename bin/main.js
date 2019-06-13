@@ -6,6 +6,8 @@ Godina/Year: 2019
 
 doPageWork();
 
+var lastImagePath;
+
 function doPageWork(){
 	checkDarkMode();
 }
@@ -46,6 +48,7 @@ $(document).on("click",".extendable-pic", function () {
    var clickedBtnSrc = $(this).attr('src');
    var fullSizeImgPath = clickedBtnSrc.replace("-thumb", '');
    fullSizeImgPath = fullSizeImgPath.replace("/thumbs", '');
+   lastImagePath = fullSizeImgPath;
    handleImages(0, fullSizeImgPath);
 });
 
@@ -84,4 +87,8 @@ function handleImages(state, url){
 	document.getElementById("image-viewer-div").style.display = "block";
 	document.getElementsByTagName("body")[0].style.overflow = "hidden";	
 	}
+}
+
+function openImgNewTab(){
+	window.open(lastImagePath,"_blank");
 }

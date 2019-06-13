@@ -26,7 +26,7 @@
 				<div class="dropdown dropleft">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="index.html">Početna</a></li>
+						<li><a class="dropdown-item" href="/index.html">Početna</a></li>
 						<li><a class="dropdown-item" href="/about.html">O projektu</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Sadržaj</li>
@@ -59,8 +59,8 @@
 	<div class="container col-sm-8 center">
 			<div class="jumbotron content-jumbotron">
 				<div class="row justify-content-center">
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt4/hrt4_2014.png"><h6 class="thumbnail-description">HRT4, 2014.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt4/hrt4_trenutni.png"><h6 class="thumbnail-description">HRT4, trenutni logo.</h6></span>		
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt4/hrt4_2014.png"><h6 class="thumbnail-description">HRT4, 2014.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt4/hrt4_trenutni.png"><h6 class="thumbnail-description">HRT4, trenutni logo.</h6></span>		
 				</div>
 		</div>
 	</div>
@@ -132,6 +132,7 @@
 <div class="image-viewer" id="image-viewer-div">
 <button type="button" class="btn btn-danger image-btn-close" onclick="handleImages(1)" id="image-close-button">X</button>
 <img class="image-frame" id="image-frame" src="" alt="Okvir slike">
+<a href="#" onclick="openImgNewTab()" class="img-newtab-link"><i class="fas fa-external-link-alt" id="new-tab-image"></i> Otvori u novom prozoru</a>
 </div>
 
 

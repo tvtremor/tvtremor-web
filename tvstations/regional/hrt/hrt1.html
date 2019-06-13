@@ -12,12 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
-	<script src="https://unpkg.com/popper.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet"> 
 </head>
 
 <body>
-<div class="site-wrap">
 	<header>
 		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
@@ -28,7 +26,7 @@
 				<div class="dropdown dropleft">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="index.html">Početna</a></li>
+						<li><a class="dropdown-item" href="/index.html">Početna</a></li>
 						<li><a class="dropdown-item" href="/about.html">O projektu</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Sadržaj</li>
@@ -444,7 +442,6 @@
 <h4>TVtremor 2019. <em id="footer-version">2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>
 </div>
-</div>
 	
 <div class="help-wrapper" id="help-wrap-element">
 
@@ -465,6 +462,7 @@
 <div class="image-viewer" id="image-viewer-div">
 <button type="button" class="btn btn-danger image-btn-close" onclick="handleImages(1)" id="image-close-button">X</button>
 <img class="image-frame" id="image-frame" src="" alt="Okvir slike">
+<a href="#" onclick="openImgNewTab()" class="img-newtab-link"><i class="fas fa-external-link-alt" id="new-tab-image"></i> Otvori u novom prozoru</a>
 </div>
 
 </body>

@@ -26,7 +26,7 @@
 				<div class="dropdown dropleft">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="index.html">Početna</a></li>
+						<li><a class="dropdown-item" href="/index.html">Početna</a></li>
 						<li><a class="dropdown-item" href="/about.html">O projektu</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Sadržaj</li>
@@ -59,14 +59,14 @@
 	<div class="container col-sm-8 center">
 			<div class="jumbotron content-jumbotron">
 				<div class="row justify-content-center">
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/htv2_1992.jpg"><h6 class="station-logo-description">HTV2, 1992.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_90s.png"><h6 class="station-logo-description">HRT2, 1997. - 1999.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_1999_prozirni.jpg"><h6 class="station-logo-description">HRT2, 1999. i 2000.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_old.png"><h6 class="station-logo-description">HRT2, 2000. - 2008.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_predtv.png"><h6 class="station-logo-description">HRT2, 2008. - 2010.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_dubrovnik.jpg"><h6 class="station-logo-description">HRT2, studio Dubrovnik.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_2016.png"><h6 class="station-logo-description">HRT2, 2016. Ubrzo povučen.</h6></span>
-				<span class="thumbnail img-thumbnail"><img src="/img/logos/hrt2/hrt2_trenutni.png"><h6 class="station-logo-description">HRT2, trenutni logo.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/htv2_1992.jpg"><h6 class="station-logo-description">HTV2, 1992.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_90s.png"><h6 class="station-logo-description">HRT2, 1997. - 1999.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_1999_prozirni.jpg"><h6 class="station-logo-description">HRT2, 1999. i 2000.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_old.png"><h6 class="station-logo-description">HRT2, 2000. - 2008.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_predtv.png"><h6 class="station-logo-description">HRT2, 2008. - 2010.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_dubrovnik.jpg"><h6 class="station-logo-description">HRT2, studio Dubrovnik.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_2016.png"><h6 class="station-logo-description">HRT2, 2016. Ubrzo povučen.</h6></span>
+				<span class="thumbnail img-thumbnail"><img class="station-logo" src="/img/logos/hrt2/hrt2_trenutni.png"><h6 class="station-logo-description">HRT2, trenutni logo.</h6></span>
 				<h6 class="description-text">Županijska panorama prenosi se izravno iz lokalnih studija (Bjelovar, Dubrovnik, Osijek...) i svaki studio ima svoj logo.</h6>
 				</div>
 		</div>
@@ -95,6 +95,7 @@
 	
 <div class="container col-sm-8 center">
 		<div class="jumbotron content-jumbotron">
+		<div class="row justify-content-center">
 						<div class="thumbnail img-thumbnail">
 							<img class="extendable-pic" src="/img/testcard/thumbs/jrt_zgrb2-thumb.jpg">
 							<p class="thumbnail-description">JRT Zagreb 2, 1989.</h6>
@@ -120,6 +121,7 @@
 							<p class="thumbnail-description">HRT2, 1994. - 2010.</h6>
 						</div>
 					</div>
+		</div>
 		</div>
 
 <div class="container col-sm-8 center">
@@ -337,6 +339,7 @@
 <div class="image-viewer" id="image-viewer-div">
 <button type="button" class="btn btn-danger image-btn-close" onclick="handleImages(1)" id="image-close-button">X</button>
 <img class="image-frame" id="image-frame" src="" alt="Okvir slike">
+<a href="#" onclick="openImgNewTab()" class="img-newtab-link"><i class="fas fa-external-link-alt" id="new-tab-image"></i> Otvori u novom prozoru</a>
 </div>
 
 

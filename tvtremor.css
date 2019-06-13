@@ -61,6 +61,6 @@ a:focus{color:#8B0000;}
 .help-item, .help-title{color:rgb(216,216,216);}
 .help-item{font-size:11pt;}
 .image-frame{max-height:100%;max-width:100%;position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;border: 1px solid #d8d8d8;}
-
+.work{display:none;}
 /* Media */
 @media only screen and (max-width:480px){.hoverable-logo{margin-top:1.5em;}}

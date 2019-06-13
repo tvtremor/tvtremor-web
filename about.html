@@ -5,10 +5,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TVtremor</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<title>TVtremor - O projektu</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="/tvtremor.css" rel="stylesheet">
 	<script src="/bin/main.js"></script>
@@ -17,77 +17,77 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-light navbar-tvtremor">
+		<nav class="navbar navbar-expand bg-light">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="/index.html">TVtremor</a>
-				</div>
-			<ul class="nav navbar-nav navbar-right">
-				
-				<li class="dropdown">
-					<a class="dropdown-toggle menu-item" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+					</div>
+			<ul class="navbar-nav">
+				<div class="dropdown dropleft">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 					<ul class="dropdown-menu">
-						<li><a class="menu-item" href="/index.html">Početna</a></li>
-						<li class="active"><a class="menu-item" href="#">O projektu</a></li>
+						<li><a class="dropdown-item" href="/index.html">Početna</a></li>
+						<li class="active"><a class="dropdown-item" href="/about.html">O projektu</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Sadržaj</li>
-						<li><a class="menu-item" href="/tvstations.html">TV stanice</a></li>
-						<li><a class="menu-item" href="/radio.html">Radio stanice</a></li>
-						<li><a class="menu-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
-						<li><a class="menu-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
+						<li><a class="dropdown-item" href="/tvstations.html">TV stanice</a></li>
+						<li><a class="dropdown-item" href="/radio.html">Radio stanice</a></li>
+						<li><a class="dropdown-item" href="/pojmovnik/index_p.html">Pojmovnik</a></li>
+						<li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Arhiv</a></li>	
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Kontakt</li>
-						<li><a href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
-						<li><a href="mailto:tvtremor@gmail.com">E-pošta</a></li>
+						<li><a class="dropdown-item" href="https://twitter.com/TVtremorHR" target="_blank">Twitter</a></li>
+						<li><a class="dropdown-item" href="mailto:tvtremor@gmail.com">E-pošta</a></li>
 						<li role="separator" class="divider"></li>
 						<li class="dropdown-header">Postavke</li>
-						<li><a class="menu-item" href="#">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
-						<li><a class="menu-item" href="#">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+						<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(1)">Tamni način <i class="fas fa-moon" aria-hidden="true"></i></a></li>
+<li><a class="dropdown-item" href="#" onclick="toggleDarkMode(0)">Svijetli način <i class="fa fa-sun" aria-hidden="true"></i></a></li>
+						
 					</ul>
-					</ul>
-				</li>	
-			
+				</div>
+			</ul>
 			</div>
 		</nav>
 	</header>
 	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+	<div class="container col-sm-8 center">
 		<div class="jumbotron about-jumbotron">
-				<h1 style="text-align:center;">Kada i zašto je ova stranica nastala?</h1>
+				<h1 class="jumbotron-title">Kada i zašto je ova stranica nastala?</h1>
 	</div>
 </div>
 	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron">
+	<div class="container col-sm-8 center">
+			<div class="jumbotron content-jumbotron">
 				<p>TVtremor je nastao uoči Božića 2017. godine, s ciljem prezervacije i arhiviranja televizijskog sadržaja i informacija o emitiranju televizije na teritoriju bivše Jugoslavije. Stranica sadrži fotografije, informacije i videozapise o televizijskom emitiranju.</p>
 				<p>Cjelokupan sadržaj otvorenog je koda, dostupan na <a href="http://github.com/tvtremor/tvtremor-web" target="_blank">GitHubu</a> i svatko ima mogućnost izmijeniti, kopirati, koristiti te spremiti sadržaj, uz obavezno navođenje autora stranice. Također postoji i <a href="https://drive.google.com/drive/folders/1Vyh_jOl_WBcjklCL2tH4qjHe55-3brJ-?usp=sharing" target="_blank">Google Drive arhiv</a>, <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank">YouTube kanal</a> te <a href="http://twitter.com/TVtremorHR">Twitter račun</a>.</p>
 				</div>
 	</div>
 	
-	<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
-			<div class="jumbotron">
-				<h3><b>Napredak projekta</b></h3>
-				<p>Trenutna verzija ove stranice je 2019-m1.0. Objavljena je 27. ožujka 2019.</p>
+	<div class="container col-sm-8 center">
+			<div class="jumbotron content-jumbotron">
+				<h3><b class="napredak">Napredak projekta</b></h3>
+				<p>Trenutna verzija ove stranice je v2019-b1.2. Objavljena je 13. lipnja 2019.</p>
 				<p>Na stranici je obuhvaćeno sljedeće:</p>
 				<ul>
-				<li>Obuhvaćeni su logotipi, identi, PP-i te rasporedi svih HRT kanala do otprilike 2010. godine, uz glazbu s TV rasporeda.</li>
-				<li>Obuhvaćeni su satovi Dnevnika HRT-a do 2012. godine te još par ostalih sitnica.</li>
+				<li>Obuhvaćeni su logotipi, identi, PP-i te rasporedi svih HRT kanala do otprilike 2010. godine, uz glazbu s TV rasporeda. Nedostaje ono što se nije moglo pronaći.</li>
+				<li>Obuhvaćeni su satovi Dnevnika HRT-a do 2012. godine te još par ostalih sitnica. Nedostaje ono što se nije moglo pronaći.</li>
+				<li>Obuhvaćeni su identi i PP-i Nove TV do 2019. godine. Nedostaje ono što se nije moglo pronaći.</li>
 				</ul>
 				<p>Cilj za buduće verzije je sljedeći:</p>
 				<ul>
-				<li>Dodavanje RTL-a, Nove TV i Doma TV-a.</li>
+				<li>Dodavanje RTL-a i Doma TV-a te stanica iz BiH (FTV, BHT1, RTRS, TVSA, Nova BH, OBN).</li>
 				<li>Dodavanje sadržaja radijskih stanica. Primarni fokus je na Hrvatski radio i to globalne stanice (HR1, HR2 i HR3).</li>
 				<li>Obuhvaćanje još više sadržaja za HRT, ukljućujući i JRT period.</li>
 				<li>Izrada pojmovnika s pojmovima vezanim uz temu stranice.</li>
 				</ul>
 				
-				<b>Napomena: svijetli i tamni mod, pojmovnik te stranice RTL-a, Nove TV, Doma TV-a i radijskih stanica trenutno nisu u funkciji. Bit će implementirani u nadolazećim verzijama.</b>
+				<b>Napomena: pojmovnik te stranice RTL-a, Doma TV-a i radijskih stanica trenutno nisu u funkciji. Bit će implementirani u nadolazećim verzijama.</b>
 				</div>
 	</div>
 	
-<div class="container col-sm-8 center" style="left:50%;transform:translateX(-50%);">
+<div class="container col-sm-8 center">
 <div class="jumbotron foot-jumbotron">
-<h4>TVtremor 2019. <em>v2019-m1.0</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
+<h4>TVtremor 2019. <em id="footer-version">v2019-b1.2</em> <span class="footer-icons"><a href="http://twitter.com/TVtremorHR" target="_blank"><i class="fab fa-twitter"></i></a> <a href="mailto:zvono478@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://youtube.com/channel/UCZm_SrJQkYz61N-YBQWns1g" target="_blank"><i class="fab fa-youtube"></i></a> <a href="http://github.com/tvtremor" target="_blank"><i class="fab fa-github"></i></a></h4></span>
 </div>	
 </div>
 	

@@ -43,7 +43,7 @@ a:focus{color:#8B0000;}
 .category-jumbotron-cro{background: linear-gradient(135deg, rgba(255,255,255,1.0) 0%,rgba(255,45,45,1.0) 100%);}
 .category-jumbotron-bih{background: linear-gradient(135deg,rgba(0,35,149,1.0) 0%,rgba(254,203,0,1.0) 100%);}
 .category-jumbotron-other{background: linear-gradient(135deg, rgba(81,205,255,1.0) 0%,rgba(255,137,139,1.0) 100%);}
-.foot-jumbotron{background-color:rgb(88,89,90);font-size:12pt;}
+.foot-jumbotron{background-color:transparent !important;font-size:12pt;padding:1em;text-align:left !important;}
 .foot-jumbotron > h4{color:rgb(248,249,250);}
 .foot-jumbotron > h4 > a > i {color:rgb(208,209,210);}
 .foot-jumbotron > h4 > a > i:hover {color:rgb(178,179,180);}

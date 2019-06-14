@@ -45,11 +45,9 @@ var darkModeStyleDef = "body{background-color:rgb(15,15,15);}.bg-light{backgroun
 }
 
 $(document).on("click",".extendable-pic", function () {
-   var clickedBtnSrc = $(this).attr('src');
-   var fullSizeImgPath = clickedBtnSrc.replace("-thumb", '');
-   fullSizeImgPath = fullSizeImgPath.replace("/thumbs", '');
-   lastImagePath = fullSizeImgPath;
-   handleImages(0, fullSizeImgPath);
+   var ImgPath = $(this).attr('src');
+   lastImagePath = ImgPath;
+   handleImages(0, ImgPath);
 });
 
 function Anniversaries(){
